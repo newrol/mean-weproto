@@ -2,6 +2,6 @@
 
 * [Prefacio](prefacio.md)
 
-* [Part I](part1/README.md)
-    * [Writing is nice](part1/writing.md)
-    * [GitBook is nice](part1/gitbook.md)
+* [Introducción al prototipado web](introduccion/README.md)
+    * [Writing is nice](introduccion/writing.md)
+    
