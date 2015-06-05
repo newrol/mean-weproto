@@ -1,6 +1,8 @@
 {
 
+    // Options for PDF generation
     "pdf": {
-        "fontSize": 18,
-    }
-  }    
+        // Font size for the file content
+        "fontSize": 18
+
+    }}    
