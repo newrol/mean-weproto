@@ -11,4 +11,6 @@
 * [Javascript](javascript/introduccion.md)
     
     * [Introduccion](javascript/introduccion.md)
+    * [Caracteristicas](javascript/caracteristicas.md)
     
+
