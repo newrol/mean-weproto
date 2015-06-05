@@ -7,7 +7,7 @@
 En las siguientes líneas expongo como la metodología de desarrollo propuesta 
 se ajusta a los requerimientos mostrados en el capitulo anterior.
 
--MongoDB: Será el encargado de la persistencia en disco de nuestro modelo 
+* **MongoDB**: Será el encargado de la persistencia en disco de nuestro modelo 
 de aplicación. Es un sistema de bases de datos nosql que está cogiendo mucha fuerza estos años y que junto a mongoose; el ODM( que usaremos reduciremos al máximo la brecha entre aplicación/base de datos. 
 
 -Javascript: El lenguaje de programación. Es el pilar de este proyecto y su sintaxis 
