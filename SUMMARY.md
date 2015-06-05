@@ -6,3 +6,4 @@
     
     * [Premisas del proyecto](introduccion/premisas.md)
     * [Argumento del proyecto](introduccion/argumento.md)
+    * [Banco de trabajo](introduccion/banco.md)
