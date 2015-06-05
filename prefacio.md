@@ -4,6 +4,7 @@
 ######  *"Si en los inicios no puedes alimentar a tu equipo con 2 pizzas, es que es demasiado grande" - Jeff Bezos de Amazon.*
 
 
+
 El desarrollo en el ámbito del software se basa en transmutar un modelo abstracto en productos que aporten una utilidad específica y que puedan ser utilizados  para generar nuevas habilidades en sus usuarios o hacer más eficientes las ya existentes.
 
 Cuando se trata crear un nuevo software para el gran público o un determinado perfil de usuario, la principal prioridad (en cuanto a desarrollo de producto se refiere) es generar un prototipo con una funcionalidad básica que nos aporte una idea pragmática de cual puede ser el impacto y potencial de dicho software. En definitiva, estos “experimentos” requieren de agilidad desde que la idea empieza a incubarse. Agilidad en la forma que los miembros del equipo tienen de comunicarse entre si, agilidad en los procesos de negocio y sobre todo agilidad en las tecnologías que servirán de soporte en nuestro desarrollo.
