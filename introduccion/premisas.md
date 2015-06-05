@@ -1,7 +1,7 @@
-# Premisas del proyecto
+## Premisas del proyecto
 
 
-"Si no estás avergonzado por la primera versión de tu producto, es porque probablemente lanzaste el producto demasiado tarde" - Reid Hoffman de LinkedIn.
+######*"Si no estás avergonzado por la primera versión de tu producto, es porque probablemente lanzaste el producto demasiado tarde" - Reid Hoffman de LinkedIn.*
 
 
 El modelo de desarrollo que propongo tratará de resolver satisfactoriamente un perfil de proyecto específico, en los siguientes puntos de mostrarán sus caracteristicas:
