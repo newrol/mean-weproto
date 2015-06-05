@@ -1,7 +1,4 @@
 # Summary
 
-* [Prefacio](prefacio.md)
+* prefacio
 
-* [Introducción al prototipado web](introduccion/README.md)
-    * [Writing is nice](introduccion/writing.md)
-    
