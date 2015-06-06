@@ -3,6 +3,8 @@
 
 ######  *"Si en los inicios no puedes alimentar a tu equipo con 2 pizzas, es que es demasiado grande" - Jeff Bezos de Amazon.*
 
+<br>
+<br>
 
 
 El desarrollo en el ámbito del software se basa en transmutar un modelo abstracto en productos que aporten una utilidad específica y que puedan ser utilizados  para generar nuevas habilidades en sus usuarios o hacer más eficientes las ya existentes.
