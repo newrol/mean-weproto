@@ -72,11 +72,10 @@ Hasta el momento nuestra jerarquía de directorios en el proyecto quedaría se m
 
 
 ```javascript
-    myuserlist
+myuserlist
  \
   |- package.json
   |-properties.js	
   |*node_modules -> invisible pues no se ha añadido librerias
   |*Diferentes ficheros git en caso de usarlo.
-
 ```
