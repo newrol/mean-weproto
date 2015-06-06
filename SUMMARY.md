@@ -25,6 +25,7 @@
  
 * [MongoDB](mongo/introduccion)
     * [introduccion](mongo/introduccion)
+    * [Estructura](mongo/estructura.md)
     
     
     
