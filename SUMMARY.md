@@ -15,16 +15,16 @@
     * [Callbacks](javascript/callbacks.md)
     * [Objetos y herencia](javascript/objetos.md)
 
-* [Node.js](node.introduccion.md)
+* [Node.js](node/introduccion.md)
     * [Introduccion](node/introduccion.md) 
     * [Caracteristicas](node/caracteristicas.md)
     * [Node.js en acción](node/accion.md)
     * [NPM](node/npm.md)
     * [GRUNT](node/grunt.md)
-    * [El laboratorio: MyUserList](node/laboratorio)
+    * [El laboratorio: MyUserList](node/laboratorio.md)
  
-* [MongoDB](mongo/introduccion)
-    * [introduccion](mongo/introduccion)
+* [MongoDB](mongo/introduccion.md)
+    * [introduccion](mongo/introduccion.md)
     * [Estructura](mongo/estructura.md)
         * Documentos
         * Colecciones
