@@ -10,7 +10,7 @@ Así mismo en node.js un módulo puede depender de otros, npm se encargará de m
 La jerarquía de directorios de un módulo en node.js sería la siguiente:
 
 ```javascript
-    Nombre del módulo
+Nombre del módulo
  \
   |- lib/
       \
@@ -27,25 +27,24 @@ La jerarquía de directorios de un módulo en node.js sería la siguiente:
 ```
 
 
- bin: Es la que contendrá las funciones con las que se podrá ejecutar nuestro módulo en la línea de comandos.
+* **bin:** Es la que contendrá las funciones con las que se podrá ejecutar nuestro módulo en la línea de comandos.
 
- source: Es la que contiene nuestro código fuente.
+* **source:** Es la que contiene nuestro código fuente.
 
-dist: Es la que contiene el  código Javascript final del módulo.
+* **dist:** Es la que contiene el  código Javascript final del módulo.
 
-test: Es la que contiene el código Javascript final de las pruebas unitarias que tenga el módulo.
+* **test:** Es la que contiene el código Javascript final de las pruebas unitarias que tenga el módulo.
 
- .npmignore: Este archivo es necesario para que NPM sepa que archivos de nuestro repositorio ignorar al instalar y descargar nuestro módulo en una máquina cliente.
+* **.npmignore:** Este archivo es necesario para que NPM sepa que archivos de nuestro repositorio ignorar al instalar y descargar nuestro módulo en una máquina cliente.
 
-package.json: Este archivo es necesario para que NPM sepa toda la información relevante de nuestro proyecto.(se tratará a fondo más adelante)
+* **package.json:** Este archivo es necesario para que NPM sepa toda la información relevante de nuestro proyecto.(se tratará a fondo más adelante)
 
-README.md: Este es un archivo con extensión .md( Markdown), por defecto es el archivo llamado por NPM para mostrar un resumen y/o instrucciones de instalación de nuestro módulo o paquete Node.js.
-
+* **README.md:** Este es un archivo con extensión .md( Markdown), por defecto es el archivo llamado por NPM para mostrar un resumen y/o instrucciones de instalación de nuestro módulo o paquete Node.js.
 
 No es la finalidad de este documento crear módulos en npm, solo saber como usarlos y ensamblarlos en nuestra aplicación, no obstante en la web oficial de esta tecnología se explica de forma detallada como hacerlo.
 
 
-INICIANDO LA APLICACIÓN
+###INICIANDO LA APLICACIÓN
 
 Anteriormente hemos ejecutado pequeños bloques de código separados entre si, pero con las diferentes herramientas descritas ya tenemos la capacidad de plantear el scaffolding de nuestra aplicación. Existen soluciones de alto nivel como yeoman que nos abstraen casi por completo de la lógica interna de directorios de nuestra aplicación y que en posteriores aplicaciones el desarrollador puede implementar para agilizar aún más su implementación, no obstante en este acercamiento considero oportuno organizar la aplicación de una forma más “artesanal” para así conseguir una comprensión más profunda.
 
@@ -63,9 +62,10 @@ con nuestro proyecto iniciado podemos proceder a añadir las librerías que dese
 
 Para instalar una nueva libreria solo hemos de ejecutar:
 	
-/*
+    /*
 		npm install <nombre de la libreria>
 	*/
+	
 	npm install moment
 
 Con esta ejecución hemos añadido a nuestro proyecto la librería moment.js que se encarga de facilitarnos el manejo de fecha | hora dentro de nuestra aplicación.
@@ -79,4 +79,4 @@ Si además deseamos que la declaración de nuestra libreria se guarde en el fich
 
 Cuando guardamos la información de las librerías en package.json es una buena práctica separar las librerías de producción de nuestra aplicación con las librerías de desarrollo por lo tanto cuando usémos librerías que sólo serán utilizadas para ejecutar test, o tareas de desarrollo usaremos:
 
-npm install --dev <nombre del paquete>
+    npm install --dev <nombre del paquete>
