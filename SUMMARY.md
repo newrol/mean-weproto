@@ -30,7 +30,13 @@
         * Colecciones
         * Bases de datos
     * [Shell de MongoDB](mongo/shell.md)
-    
+    * [Crud](mongo/crud.md)
+        * Insertar
+        * Consultar
+        * Actualizar
+        * Eliminar 
+    * [Mongoose](mongo/mongoose.md)
+
     
     
     
