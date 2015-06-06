@@ -1,0 +1,105 @@
+#Persistencia en MyUserList
+
+En este capitulo procederemos a añadir la capa de persistencia de datos a nuestra aplicación laboratorio.
+
+Lo primero que hay que hacer es instalar (en la web está la info), y comprobar que el servicio de mongoDB está en ejecución.
+
+Después hay que instalar el driver de mongoose:
+
+    npm install --save mongoose
+    
+Podremos comprobar que en nuestro fichero *package.json* se ha añadido las siugientes líneas:
+
+    "dependencies": {
+        "mongoose": "^4.0.5"
+    }
+
+Y que ne *node.modules* se ha añadido el directorio mongoose con todos los valores. Ahora procederemos a crear nuestro esquema de datos.
+
+Para ello en en directorio raíz añadiremos la siguiente ruta
+
+    /app/db
+    
+Y dentro del directorio db un fichero llamado *dbSchema.js*. Dentro de db schema crearemos nuestro esquema de datos de mongoose.
+
+    var mongoose   = require('mongoose');				//Import mongoose library {http://mongoosejs.com}
+
+    var userSchema = new mongoose.Schema({
+        nick  : { type: String, required: true, unique: true },
+       	name : { type :String, required:true },
+    	surname   : { type :String, required:true },
+    	mail : String,
+    });
+    //Con exports exportamos este objeto para hacerlo visible
+    exports.userSchema = userSchema;
+
+De esta forma habremos creado nuestro modelo de mongoose. Pero para esta aplicación me gustaría añadir un modelo basado en este que aún nos abstraiga más de la nomenclatura de mongoose y sea más intuitivo a la hora de ser usado.
+
+Crearemos el directorio:
+
+    /app/models
+
+Y dentro de models el fichero *user.js*. Dentro de user crearemos el modelo que usaremos en nuestra lógica:
+
+    var properties = require('properties').properties;	//Import properties file, and choose properties object
+
+    var mongoose   = require('mongoose');	
+    var dbSchema   = require(properties.path + 'app/db/dbSchema')
+
+    var User = mongoose.model('user', dbSchema.userSchema); 
+
+	User.prototype.setNick = function(userNick){
+		this.title = opportunityTittle;
+	};
+	
+	User.prototype.setName = function(userName){
+		this.header = opportunityHeader;
+	};
+
+	User.prototype.setSurname = function(userSurname){
+		this.body = opportunityHeader;
+	};
+
+
+	User.prototype.setMail = function(userMail){
+		this.photoPath = opportunityPhotoPath;
+	};
+
+
+	//El id lo podremos obtener pero dejaros que mongoose trate con el
+	User.prototype.getId = function(){
+		return this._id;
+	}
+
+	user.prototype.getNick = function(){
+		return this.nick;
+	}
+
+	User.prototype.getName = function(){
+		return this.title;
+	};
+
+	User.prototype.getSurname = function(){
+		return this.surname;
+	};
+
+	User.prototype.getMail= function(){
+		return this.mail;
+	};
+    //Exportarmos este modelo de usuario:	
+    exports.User = User;
+
+Al ir añadiendo métodos al prototype podremos llamarlos cuando creemos nuestro objeto a través de sus getters y sus setters (ver capitulo de herencia en javascript).
+
+
+Con nuestro modelo creado nos quedaría crear nuestro script "CRUD" que alojará nuestras consultas.
+
+El script se creará en la siguiente ruta:
+
+    /app/dao
+
+Bajo el nombre de *userDao.js*, y contendrá el siguiente código.
+
+
+
+    
