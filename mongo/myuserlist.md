@@ -25,6 +25,7 @@ Para ello en en directorio raíz añadiremos la siguiente ruta
     
 Y dentro del directorio db un fichero llamado *dbSchema.js*. Dentro de db schema crearemos nuestro esquema de datos de mongoose.
 
+```javascript
     var mongoose   = require('mongoose');				//Import mongoose library {http://mongoosejs.com}
 
     var userSchema = new mongoose.Schema({
@@ -35,6 +36,7 @@ Y dentro del directorio db un fichero llamado *dbSchema.js*. Dentro de db schema
     });
     //Con exports exportamos este objeto para hacerlo visible
     exports.userSchema = userSchema;
+```
 
 De esta forma habremos creado nuestro modelo de mongoose. Pero para esta aplicación me gustaría añadir un modelo basado en este que aún nos abstraiga más de la nomenclatura de mongoose y sea más intuitivo a la hora de ser usado.
 
@@ -44,6 +46,7 @@ Crearemos el directorio:
 
 Y dentro de models el fichero *user.js*. Dentro de user crearemos el modelo que usaremos en nuestra lógica:
 
+```javascript
     var properties = require('properties').properties;	//Import properties file, and choose properties object
 
     var mongoose   = require('mongoose');	
@@ -91,6 +94,8 @@ Y dentro de models el fichero *user.js*. Dentro de user crearemos el modelo que 
 	};
     //Exportarmos este modelo de usuario:	
     exports.User = User;
+```
+
 
 Al ir añadiendo métodos al prototype podremos llamarlos cuando creemos nuestro objeto a través de sus getters y sus setters (ver capitulo de herencia en javascript).
 
@@ -103,6 +108,7 @@ El script se creará en la siguiente ruta:
 
 Bajo el nombre de *userDao.js*, y contendrá el siguiente código:
 
+```javascript
     var properties = require('properties').properties;      // Import properties file
     var UserModel = require(properties.path + 'app/src/models/user').User;      // Import Oportunity model.
 
@@ -161,6 +167,7 @@ Bajo el nombre de *userDao.js*, y contendrá el siguiente código:
           };
     }
     exports.userDao = userDao
+```
 
 De esta forma lo que hemos hecho ha sido encapsular todas las consultas que realizaremos dentro de nuestra app en un solo fichero.
 
