@@ -46,6 +46,25 @@ El siguiente paso es crear el esquema de datos que utilizaremos:
 
     var valueSchema = new mongoose.Schema({
         title  : { type: String, required: true, unique: true },
-       	value : { type :String, required:true },
+        value :  { type :String, required:true },
     });
+
+Con nuestro esquema creado solo tendremos que crear un objeto envoltorio del mismo:
+
+    var Value = mongoose.model('value', valueSchema); 
+    
+Para crear nuevas instancias en base a value usaremos el *new*
+
+    var value1 = new Value;
+    var value2 = new Value;
+    
+Ahora tenemos dos valores dieferentes con sus propiedades. Ahora podremos ponerle titulo y valor a nuestros objetos:
+
+    value1.title = "titulo1";
+    value2.title = "titulo2";
+    
+El siguiente paso es guardar nuestros valores en la base de datos. En el anterior capitulo mostramos como trabaja mongoDB como su shell base y usando las funciones allí mostradas podríamos hacer nuestras consultas si estubieramos usando el driver básico. Pero como mongoose se nos simplifica mucho esta tarea:
+
+    title1.save();
+    title2.save();
     
