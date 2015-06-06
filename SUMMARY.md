@@ -26,6 +26,11 @@
 * [MongoDB](mongo/introduccion)
     * [introduccion](mongo/introduccion)
     * [Estructura](mongo/estructura.md)
+        * Documentos
+        * Colecciones
+        * Bases de datos
+    * [Shell de MongoDB](mongo/shell.md)
+    
     
     
     
