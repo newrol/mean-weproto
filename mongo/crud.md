@@ -2,7 +2,7 @@
 
 Dentro de una base de datos llamada datos fooDatabase crearemos una serie de colecciónes, documentos y practicaremos algunas consultas sobre ellos.
 
-###Insertar documentos
+###Insertar 
 
 Insertaremos dos  nuevos documento dentro de la coleción fooCollection.
 
@@ -12,8 +12,8 @@ Insertaremos dos  nuevos documento dentro de la coleción fooCollection.
 
 Al insertar el primer documento se creará la colección fooCollection y se insertará e documento, al insertar el segundo documento como la colección ya existe, simplemente se creará el nuevo registro.	
 
-###Consultar documentos
-	
+###Consultar
+
 en lo referente a las consultas hay que tener claros una serie de conceptos:
 		
 * Se pueden lanzar consutas a la base de datos usando find() o findOne().
@@ -71,4 +71,39 @@ varios condicionales pueden ser aplicados dentro del mismo find respentando la s
 
 Podemos usar el operador $or Para lanzar consultas enlazadas:
 
+    db.fooCollection.find({"$or" : [{"name" : "pepe"},{"name" : "antonia"}]})
 
+
+###Actualizar 
+
+Para actualizar un documento primero hemos de lanzar la consulta que seleccione el valor que queremos cambiar y después tendremos 
+
+
+        db.CollectionName.update({key : {$condition : “value”},{new values in format "key" : value"}, { upsert: true })
+
+Como podemos observar primero realizamos la consulta, después introducimos todos los valores que modificaremos y para terminar añadimos *upset :  true* para indicar que los cambios queden escritos, si no añadimos este único campo se nos imprimirá por pantalla una simulación de lo que ocurriría al aplicar el *update*
+
+    db.fooCollection.update({"name" : "pepe"},{"name" : "pepe", "apellido" : "nuevo"},{upsert : true})
+
+
+Como se ha encontrado la condición de la consulta la consola nos devolverá la siguiente salida:
+
+    WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+Donde se nos indica que se ha encontrado un valor coincidente y que uno de los valores se ha modificado.
+
+###Eliminar
+
+A la hora de realizar un borrado hemos de diferenciar entre borar una base de datos, borrar una colección o borrar uno o varios documentos.
+
+* **borrar una base de datos:** nos situariamos dentro de la base de datos que deseamos borar y escribiríamos:
+    
+        db.dropDatabase()
+
+*  **Borrar una colección:** nos situariamos dentro de la base de datos y escribiríamos
+
+        db.drop_collection("Nombre de la coleción")
+        
+* **Borrar un documento:** Lanzaríamos una consulta pero en puesto de usar *find()* usaríamos *remove()*
+
+        db.posts.remove({"name": "pepe"});
