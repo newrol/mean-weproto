@@ -1,5 +1,7 @@
 ##Mongoose
 
+###Descripción
+
 Mongoose es la herramienta de modelado de objetos para mongoDB y node.js, lo que esto significa en terminos prácticos que tu solo tendrás que definir un modelo de datos en un solo lugar; tu código. Y este será portado directamente a la base de datos de mongoDB a la que estés conectado en ese momento. 
 
 Podríamos elegir el driver básico de mongoDB para node.js, pero este elemento es solo recomendable en entornos críticos con unas carácteristicas especiales.
@@ -65,8 +67,39 @@ Ahora tenemos dos valores dieferentes con sus propiedades. Ahora podremos ponerl
     
 El siguiente paso es guardar nuestros valores en la base de datos. En el anterior capitulo mostramos como trabaja mongoDB como su shell base y usando las funciones allí mostradas podríamos hacer nuestras consultas si estubieramos usando el driver básico. Pero como mongoose se nos simplifica mucho esta tarea:
 
-    title1.save();
-    title2.save();
+Primero guardaremos value1:
+
+    value1.save(function(err){
+      if(err) console.log('No se ha podido guardar este valor');
+    });
+ 
+Al ejecutar la función *save()* se nos devolverá un primer callback en caso de error y un segundo con objeto guardado y su correspondiente _id asignado, en este caso solo queremos saber cuando se ha producido un error.
+
+Borremos value1:
+
+    value1.remove(function(status){
+        console.log(status);
+    });
+  
+en caso de desear actualizar con nuevos valores solo tendríamos que modificiar el parametro del objeto existente y llamar a su función update.
+  
+    this.update = function(opportunity, callback){
+        opportunity.update(callback);
+    };
     
+En cambio para realizar una consulta no usaremos un objeto creado, si no que utilizaremos el objeto envoltorio.
+
+    //Primero construimos la query sobre el modelo.
+    var query = Value.findOne({'title' : 'titulo1'});
+      
+    //después ejecutamos la query:
     
+    query.exec(function(err, values){
+        if (err) Console.log('ha sucedido un error');
+        else console.log(values);
+    });    
+    
+En ese caso se nos devolverá un objeto con los valores de value1, si la consulta devulveria más de uno lo que se nos devolvería sería una colección de todos los valores encontrados.
+
+Como podemos ver mongoose facilita mucho la interación con la base de datos y abstrae nuestro esquema de datos de las diferencias entre las dos plataformas. Esta funcionalidad hace de mongoose + node.js un planteamiento perfecto a la hora de prototipar apliaciones que requieran una conexión a  una base de datos.
     
