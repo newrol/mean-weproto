@@ -13,5 +13,6 @@
     * [Introduccion](javascript/introduccion.md)
     * [Caracteristicas](javascript/caracteristicas.md)
     * [Callbacks](javascript/callbacks.md)
+    * [Objetos y herencia](javascript/objetos.md)
     
 
