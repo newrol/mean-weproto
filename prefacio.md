@@ -3,7 +3,6 @@
 
 ######  *"Si en los inicios no puedes alimentar a tu equipo con 2 pizzas, es que es demasiado grande" - Jeff Bezos de Amazon.*
 <br/>
-
 <br/>
 
 
