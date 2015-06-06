@@ -21,6 +21,8 @@
     * [Node.js en acción](node/accion.md)
     * [NPM](node/npm.md)
     * [GRUNT](node/grunt.md)
+    * [El laboratorio: MyUserList](node/laboratorio)
+    
     
     
     
