@@ -49,5 +49,3 @@ El siguiente paso es crear el esquema de datos que utilizaremos:
        	value : { type :String, required:true },
     });
     
-
-    
