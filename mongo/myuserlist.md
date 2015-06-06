@@ -6,13 +6,16 @@ Lo primero que hay que hacer es instalar (en la web está la info), y comprobar 
 
 Después hay que instalar el driver de mongoose:
 
+
     npm install --save mongoose
     
 Podremos comprobar que en nuestro fichero *package.json* se ha añadido las siugientes líneas:
 
+```javascript
     "dependencies": {
         "mongoose": "^4.0.5"
     }
+```
 
 Y que ne *node.modules* se ha añadido el directorio mongoose con todos los valores. Ahora procederemos a crear nuestro esquema de datos.
 
