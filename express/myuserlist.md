@@ -132,3 +132,7 @@ function UserController(){
 }	
 exports.UserController = UserController;
 ```
+
+Dentro de el controlador filtraremos los datos enviaos por el dao y los prepararemos para enviarlos con la correcta nomenclatura web dentro de la api.
+
+
