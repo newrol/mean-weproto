@@ -115,7 +115,7 @@ Bajo el nombre de *userDao.js*, y contendrá el siguiente código:
     /*
       Function userDao constructor.
     */
-    function userDao(){
+    function UserDao(){
 
           
           this.create = function(user, callback){
@@ -166,7 +166,7 @@ Bajo el nombre de *userDao.js*, y contendrá el siguiente código:
             });
           };
     }
-    exports.userDao = userDao
+    exports.UserDao = UserDao
 ```
 
 De esta forma lo que hemos hecho ha sido encapsular todas las consultas que realizaremos dentro de nuestra app en un solo fichero.
