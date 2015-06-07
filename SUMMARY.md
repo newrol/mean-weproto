@@ -25,12 +25,13 @@
  
 * [MongoDB](mongo/introduccion.md)
     * [introduccion](mongo/introduccion.md)
+    * [Características](mongo/caracteristicas.md)
     * [Estructura](mongo/estructura.md)
         * Documentos
         * Colecciones
         * Bases de datos
     * [Shell de MongoDB](mongo/shell.md)
-    * [Crud](mongo/crud.md)
+    * [CRUD](mongo/crud.md)
         * Insertar
         * Consultar
         * Actualizar
