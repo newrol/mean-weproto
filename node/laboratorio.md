@@ -48,7 +48,8 @@ Después crearemos el fichero properties.js con el pah de nuestra aplicación.
 
 Para terminar añadiremos el Gruntfile.js para gestinar la configuración de grunt.
 
-    /*	
+```javascript
+        /*	
         Gruntfile.js
 	*/
 	var fs = require('fs');
@@ -60,9 +61,11 @@ module.exports  = function(grunt) {
 		//Create a symbolic link to set properties.js file as a general library:
   		fs.symlinkSync(__dirname + '/properties.js', __dirname + '/node_modules/properties.js');
 	});
-
 };
- 
+```
+
+
+
 Hasta el momento nuestra jerarquía de directorios en el proyecto quedaría se mostraría de la siguiente forma:
 
 
@@ -71,6 +74,7 @@ Hasta el momento nuestra jerarquía de directorios en el proyecto quedaría se m
 myuserlist
  \
   |- package.json
+  |-Gruntfile.js
   |-properties.js	
   |*node_modules -> invisible pues no se ha añadido librerias
   |*Diferentes ficheros git en caso de usarlo.
