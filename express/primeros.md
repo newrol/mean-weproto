@@ -56,14 +56,27 @@ En este caso estamos añadiendo la ruta principal y la típica página de *about
 Si quisieramos vincular la ruta de cada petición a un fichero web con código html simplemente deberíamos de enlazarnos a su ruta:
 
 ```javascript
-    /add static folder to all files:
+    //Se añade el directorio raiz del fichero
     app.use(express.static(__dirname));
 
-    //added routes to the server.
+    //se añaden los enlaces
     app.get('/', function(req, res){
 	res.render('index.html');
     });
+    
+    //se añaden los enlaces
+    app.get('/about', function(req, res){
+	res.render('about.html');
+    });
 ```
+
+de esta forma solo tendríamos que moldear nuestros ficheros html a placer para mostrar cada una de las páginas.
+
+Express está preparado para mostrar webs dinámicas, para ello utiliza los renders jade o handlebars. Yo personalmente me decanto por el segundo, pues tiene una lógica muy parecida a jekill en ruby on rails. Esta clase de render html son muy útiles a la hora de generar blogs simples o demás contenido dinámico que vaya a generar código html en tiempo de respuesta a petición. Nosotros en este caso usaremos *angular.js* para los contenidos dinámicos de nuestra web, por lo que solo tendremos que enlazar el contenido estático y servirnos de express para generar la *API REST* responderá a nuestras peticiones
+
+
+
+
 
 
 
