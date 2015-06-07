@@ -192,6 +192,6 @@ Con las correspondientes rutas web y sus respectivas llamadas al controlador.
     };
 ```
 
-
+Al finalizar esta implementación ya dispondríamos un servidor node.js plenamente funcional. En el siguiente capitulo se tratará la implementación de un cliente rest.
 
 
