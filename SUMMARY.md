@@ -47,8 +47,8 @@
     * [Características](express/caracteristicas.md)
         * Request
         * Response
-    *[Estructura de la librería](express/estructura.md)
-    *[Primeros pasos](express/primeros.md)
+    * [Estructura de la librería](express/estructura.md)
+    * [Primeros pasos](express/primeros.md)
 
 
     
