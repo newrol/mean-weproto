@@ -176,7 +176,7 @@ La estructura del proyecto hasta el momento sería:
 ```javascript
 myuserlist
  \
-  |-app/
+  |-app
       \
        |-dao/
           \ 
