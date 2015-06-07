@@ -70,8 +70,6 @@ Después hemos de iniciar nuestra "librería" propiedades con:
     grunt build
 
 
-
-
 Hasta el momento nuestra jerarquía de directorios en el proyecto quedaría se mostraría de la siguiente forma:
 
 
@@ -82,6 +80,6 @@ myuserlist
   |- package.json
   |-Gruntfile.js
   |-properties.js	
-  |*node_modules -> invisible pues no se ha añadido librerias
+  |node_modules
   |*Diferentes ficheros git en caso de usarlo.
 ```
