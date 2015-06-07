@@ -58,4 +58,12 @@ dentro de express trabajaremos de forma constante con dos objetos; Request y res
     
     * **res.jsonp(jsonp) o rest.jsonp(status, jsonp):** envia un JSONP al cliente
     
-    * **res.type(type)
+    * **res.format(object):** esta función permite enviar diferentes contenidos dependiendo de la petición aceptada
+    
+    * **res.sendFile(path, [options], [callback]):** se utliliza para leer el contenido de un fichero y enviarselo al cliente
+    
+    * **res.links(links):** añade los links a la cabecera de respuesta
+    
+    * **res.render(view, [locals], callback):** contiene el contexto por defecto para renderizar la vista.
+    
+Para renderizar contenidos se puede usar *handlebars* el cual nos permite crear vistas web dinámicas. Más no es el objetivo de deste documento usar a express para servir de una web dinámica. 
