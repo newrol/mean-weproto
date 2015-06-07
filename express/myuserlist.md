@@ -131,9 +131,4 @@ function UserController(){
   	};
 }	
 exports.UserController = UserController;
-
 ```
-
-
-    
-    
