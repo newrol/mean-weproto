@@ -171,5 +171,9 @@ Bajo el nombre de *userDao.js*, y contendrá el siguiente código:
 
 De esta forma lo que hemos hecho ha sido encapsular todas las consultas que realizaremos dentro de nuestra app en un solo fichero.
 
+La estructura del proyecto hasta el momento sería:
+
+
+
 
     
