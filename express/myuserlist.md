@@ -80,4 +80,3 @@ la ruta de la base de datos para que mongoose pueda localizarla:
 
     databaseURI : 'mongodb://localhost/mobility',
     
-    
