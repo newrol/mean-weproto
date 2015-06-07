@@ -87,52 +87,111 @@ Con nuestro servidor Configurado crearemos el controlador que unirá las consult
 Y dentro de él *userController.js* con el siguiente código:
 
 ```javascript
-var properties = require('properties').properties;							//Import properties file
-	 	
-var UserModel  	   =  require(properties.path + 'app/models/user').User; 
-var UserDaoModel    = require(properties.path + 'app/dao/userDao').UserDao	
-
-/*
-	UserController prototype
-	Callbacks status code based on http status codes http://en.wikipedia.org/wiki/List_of_HTTP_status_codes.
-*/
-function UserController(){
-
-	var userDao = new UserDaoModel();
-
-	/*	
-		Create new user, test userName exists
-	*/	
-	this.createUser = function(user, callback){
-		userDao.create(user, function(data){
-			//if the result is an instance of userMongoose Schema it was created:
-			if(data instanceof UserModel) callback({status : 201, data : data}); //If user has been created return correct value 201 and the user.
-			else if (data.code === 11000) callback({status : 409, data: 'this user already exist'});
-			else{
-				console.log('error', " UserController: Could not Create user:" + data);
-				callback({status: 500, data: data});
-			} 	
-		});
-	};
-	
-	
-	/*
-		Find all users
-	*/	
-	this.findAllUsers = function(callback){
-    	userDao.findAll(function(data){
-    		if(data === null)callback({status: 204, data: 'There are not users'});
-    		else if(data[1] instanceof UserModel) callback({status : 200, data : data});
-    		else{
-				console.log('error', " UserController: Could not find All users:" + data);
-				callback({status: 500, data: data});
-			} 	 
-    	});
-  	};
-}	
+    var properties = require('properties').properties;							//Import properties file
+    	 	
+    var UserModel  	   =  require(properties.path + 'app/models/user').User; 
+    var UserDaoModel    = require(properties.path + 'app/dao/userDao').UserDao	
+    
+    /*
+    	UserController prototype
+    	Callbacks status code based on http status codes http://en.wikipedia.org/wiki/List_of_HTTP_status_codes.
+    */
+    function UserController(){
+    
+    	var userDao = new UserDaoModel();
+    
+    	/*	
+    		Create new user, test userName exists
+    	*/	
+    	this.createUser = function(user, callback){
+    		userDao.create(user, function(data){
+    			//if the result is an instance of userMongoose Schema it was created:
+    			if(data instanceof UserModel) callback({status : 201, data : data}); //If user has been created return correct value 201 and the user.
+    			else if (data.code === 11000) callback({status : 409, data: 'this user already exist'});
+    			else{
+    				console.log('error', " UserController: Could not Create user:" + data);
+    				callback({status: 500, data: data});
+    			} 	
+    		});
+    	};
+    	
+    	
+    	/*
+    		Find all users
+    	*/	
+    	this.findAllUsers = function(callback){
+        	userDao.findAll(function(data){
+        		if(data === null)callback({status: 204, data: 'There are not users'});
+        		else if(data[1] instanceof UserModel) callback({status : 200, data : data});
+        		else{
+    				console.log('error', " UserController: Could not find All users:" + data);
+    				callback({status: 500, data: data});
+    			} 	 
+        	});
+      	};
+    }	
 exports.UserController = UserController;
 ```
 
 Dentro de el controlador filtraremos los datos enviaos por el dao y los prepararemos para enviarlos con la correcta nomenclatura web dentro de la api.
+
+La api será alojada en el directorio:
+
+    /api
+
+Dentro de api crearemos el fichero *index.js* el cual enlazamos en el script de servidor con express. Dentro de index se alojará el codigo que enlazará las diferentes rutas de la aplicacion con sus rutas. En este caso solo el enlace con la ruta *userApi*
+
+```javascript
+    var properties = require('properties').properties;   //Properties file
+    
+    
+    /*
+    	Module to define all calls to different rest routes 
+    	defined in this folder in their own files.
+    */	
+    
+    module.exports = function(rest){
+    
+    	require(properties.path + 'api/userApi')(rest);
+    }
+```
+
+Para terminal añadiremos *userApi.js* dentro de */api*
+Con las correspondientes rutas web y sus respectivas llamadas al controlador.
+
+```javascript
+    var properties = require('properties').properties;
+    var  rest = require(properties.path + 'api/index').rest;
+    
+    var UserModel           = require(properties.path + 'app/models/user').User;
+    var UserControllerModel = require(properties.path + 'app/controllers/userController').UserController;
+    
+    var userController = new UserControllerModel();
+    
+    	
+    module.exports = function(rest){
+    
+    	rest.post('/user', function(req, content, callback){
+    		var user = new UserModel();
+    		user.setNick(req.body.nick);
+    		user.setName(req.body.name);
+    		user.setSurname(req.body.surname);
+    		user.setMail(req.body.mail);	
+    
+    		userController.createUser(user, function(user){
+    			callback(null, { id: user.data.id }, { statusCode: user.status });
+    		});	
+    	});
+    
+    
+        rest.get('/allUsers', function(req, content, callback){
+    		userController.findAllUsers(function(users){
+    			callback(null, users.data.map(function(user){ return user}), { statusCode: users.status } );
+    		});	
+    	});
+    };
+```
+
+
 
 
