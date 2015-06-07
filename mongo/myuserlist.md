@@ -189,6 +189,7 @@ myuserlist
            |-user.js
   |- package.json
   |-properties.js	
+  |Gruntfile.js
   |node_modules 
   |*Diferentes ficheros git en caso de usarlo.
 ```
