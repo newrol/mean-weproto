@@ -192,6 +192,36 @@ Con las correspondientes rutas web y sus respectivas llamadas al controlador.
     };
 ```
 
+Nuestro proyecto quedaría con el siguiente esquema de directorios:
+
+```javascript
+myuserlist
+ \
+  |-api
+     \
+      |-index.js
+      |-userApi.js
+  |-app
+      \
+       |-dao/
+          \ 
+           |-userDao.js
+       |-db/
+          \
+           |-dbSchema.js
+       |-models/
+          \
+           |-user.js
+  |-site
+      \
+       |-myuserlist.js    
+  |- package.json
+  |-properties.js	
+  |Gruntfile.js
+  |node_modules 
+  |*Diferentes ficheros git en caso de usarlo.
+```
+
 Al finalizar esta implementación ya dispondríamos un servidor node.js plenamente funcional. En el siguiente capitulo se tratará la implementación de un cliente rest.
 
 
