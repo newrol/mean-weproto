@@ -65,7 +65,9 @@ module.exports  = function(grunt) {
 	});
 };
 ```
+Después hemos de iniciar nuestra "librería" propiedades con:
 
+    grunt build
 
 
 
