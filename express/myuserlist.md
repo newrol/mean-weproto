@@ -51,7 +51,7 @@ y dentro el fichero *myuserlist.js* con el contenido de nuestro servidor.
     //en este caso las hemos trasladado a otro fichero
     //pues resulta una buena práctica en grandes   
     //aplicaciones
-    require(properties.path + 'api/src/index')(rest);
+    require(properties.path + 'api/index')(rest);
     
     // error 400 personalizada
     app.use(function(req, res){
