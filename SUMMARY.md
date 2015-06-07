@@ -50,6 +50,11 @@
     * [Estructura de la librería](express/estructura.md)
     * [Primeros pasos](express/primeros.md)
     * [API REST con express](express/api.md)
+        * ¿Qué es una API REST?
+        * Caracteristicas de una API REST
+        * Debug de una API REST
+        * Implementación en express
+    * [Express- API REST en MyUserList]()
 
 
     
