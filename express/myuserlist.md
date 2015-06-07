@@ -75,3 +75,9 @@ y dentro el fichero *myuserlist.js* con el contenido de nuestro servidor.
     	app.get('port') + '; press Ctrl-C to terminate.' );
     });
 ```
+El siguiente paso será añadir al objeto *properties.js*
+la ruta de la base de datos para que mongoose pueda localizarla:
+
+    databaseURI : 'mongodb://localhost/mobility',
+    
+    
