@@ -173,6 +173,25 @@ De esta forma lo que hemos hecho ha sido encapsular todas las consultas que real
 
 La estructura del proyecto hasta el momento sería:
 
+```javascript
+myuserlist
+ \
+  |-app/
+      \
+       |-dao/
+          \ 
+           |-userDao.js
+       |-db/
+          \
+           |-dbSchema.js
+       |-models/
+          \
+           |-user.js
+  |- package.json
+  |-properties.js	
+  |node_modules 
+  |*Diferentes ficheros git en caso de usarlo.
+```
 
 
 
