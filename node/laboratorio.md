@@ -35,7 +35,9 @@ En este capítulo podremos iniciar la aplicación y enlazarla a grub, además de
 Primero nos dirigiremos con una terminal a la ruta de myuserlist y iniciaremos npm y rellenaremos el formulario con los parámetros correspondientes.
 
 	npm init
-
+    
+    npm install --save grunt
+    
 Después crearemos el fichero properties.js con el pah de nuestra aplicación.
 
 	/*	
@@ -63,6 +65,8 @@ module.exports  = function(grunt) {
 	});
 };
 ```
+
+
 
 
 
