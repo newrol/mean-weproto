@@ -74,6 +74,4 @@ y dentro el fichero *myuserlist.js* con el contenido de nuestro servidor.
     	console.log( 'Express started on http://localhost:' +
     	app.get('port') + '; press Ctrl-C to terminate.' );
     });
-
-
 ```
