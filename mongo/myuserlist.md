@@ -77,7 +77,7 @@ Y dentro de models el fichero *user.js*. Dentro de user crearemos el modelo que 
 		return this._id;
 	}
 
-	user.prototype.getNick = function(){
+	User.prototype.getNick = function(){
 		return this.nick;
 	}
 
