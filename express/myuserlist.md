@@ -197,11 +197,11 @@ Nuestro proyecto quedaría con el siguiente esquema de directorios:
 ```javascript
 myuserlist
  \
-  |-api
+  |-api/
      \
       |-index.js
       |-userApi.js
-  |-app
+  |-app/
       \
        |-dao/
           \ 
@@ -215,6 +215,7 @@ myuserlist
   |-site
       \
        |-myuserlist.js    
+       
   |- package.json
   |-properties.js	
   |Gruntfile.js
