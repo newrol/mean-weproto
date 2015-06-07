@@ -51,21 +51,17 @@ Para terminar añadiremos el Gruntfile.js para gestinar la configuración de gru
     /*	
         Gruntfile.js
 	*/
-	module.exports  = function(grunt) {
-		
-		//Task to create a simbolic link from properties.js to node_modules:	
-		grunt.registerTask('propertiesLink', '*Build Task*. Create a symbolic link to 
-            set properties.js file as a general library.', function() {
-  				fs.symlinkSync(__dirname + '/properties.js', __dirname +  
-                    '/node_modules/properties.js');
-		});
+	var fs = require('fs');
 
-		
-		//Grunt task to set build the basic project configuration:
-		grunt.registerTask('build', 'Execute the build tasks', ['propertiesLink', 
-            'genKey']);
+module.exports  = function(grunt) {
 
-	};
+   //Grunt task to set build the basic project configuration:
+	grunt.registerTask('build', 'My "default" task description.', function() {
+		//Create a symbolic link to set properties.js file as a general library:
+  		fs.symlinkSync(__dirname + '/properties.js', __dirname + '/node_modules/properties.js');
+	});
+
+};
  
 Hasta el momento nuestra jerarquía de directorios en el proyecto quedaría se mostraría de la siguiente forma:
 
