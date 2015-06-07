@@ -1,0 +1,70 @@
+##Primeros pasos con express
+
+El primer paso para usar express.js es añadirlo al proyecto actual de node.js para ello usaremos npm:
+
+    npm insstall --save express
+
+Luego crearemos un sript sencillo con el siguiente código:
+
+    var express = require('express');
+    
+    var app = express();
+    
+    app.set('port', process.env.PORT || 4000);
+    
+    // pagina de error 404 personalizada
+    app.use(function(req, res){
+     res.type('text/plain');
+     res.status(404);
+     res.send('404 - Not Found');
+    });
+    
+    // pagina de error 500 personalizada
+    app.use(function(err, req, res, next){
+     console.error(err.stack);
+     res.type('text/plain');
+     res.status(500);
+     res.send('500 - Server Error');
+    });
+    
+    //Lanzamos el servidor
+    app.listen(app.get('port'), function(){
+     console.log( 'Express started on http://localhost:' +
+     app.get('port') + '; press Ctrl-C to terminate.' );
+    });
+
+Con este código pondriamos a nuestra disposición una instancia de express.
+
+Si quiseramos añadir rutas a la escucha solo tendríamos que usar la función *get()*:
+
+```javascript
+    app.get('/', function(req, res){
+     res.type('text/plain');
+     res.send('página principal');
+    });
+    
+    app.get('/about', function(req, res){
+     res.type('text/plain');
+     res.send('Página de descripción');
+    }); 
+```
+
+Estas dos rutas hay que añadirlas antes de las funciones de error 400 y error 500 pues nuestro servidor de express comenzará a buscar desde la primera hasta la última, si cuando recibe una petición su primer función a ejecutar es la 400 supondrá que no hay otras rutas en la aplicación y lanzará la respuesta de que no se ha encontrado la ruta seleccionada.
+
+En este caso estamos añadiendo la ruta principal y la típica página de *about*. cabe decir que estamos enviando los textos planos descriptivos de cada aplicación. *'página principal'* y *página de despcripción*.
+
+Si quisieramos vincular la ruta de cada petición a un fichero web con código html simplemente deberíamos de enlazarnos a su ruta:
+
+```javascript
+    /add static folder to all files:
+    app.use(express.static(__dirname));
+
+    //added routes to the server.
+    app.get('/', function(req, res){
+	res.render('index.html');
+    });
+```
+
+
+
+
