@@ -5,8 +5,7 @@
 Los desarrollaodes de express lo describen como como un framework minimalista y flexible para aplicaciones web basadas en node.js. Creado para construir aplicaciones web de una página, multipágina o híbridas.
 
 
-El sistema de instalación propicio de esta tecnología lo podemos encontrar perfectamente detallado en la
-web oficial de mongoDB
+Para añadir express a nuestra aplicación usaremos el gestor de paquetes npm
 
 ##Introducción
 
