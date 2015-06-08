@@ -26,7 +26,7 @@ Antes de continuar describiendo *Angular.js* expliquemos qué es el modelo vista
 Al estar basado en este esquema y por su estructura Angular.js aporta una serie de beneficios que numeraremos a continuación:
 
 1. 
-Nos permite crear aplicaciones de una sola págin.
+Nos permite crear aplicaciones de una sola página.
 
 1. 
 Angular.js requiere solo unas pocas líneas de código para completar tareas si lo comparamos con javascript puro o con JQuery (del cual puede beneficiarse).
@@ -40,5 +40,9 @@ La naturaleza declarativa simplifica la tarea de escribir y mantener nuestra apl
 1. 
 los templates de Angular.js están escritos completamente en html de modo que los diseñadores lo tendrán facil para trabajar con el estilo de la aplicación.
 
-Para hacer peticiones al servidor 
+Angular no tiene especiales requerimientos sobre el tipo de lenguaje usado en el servidor, simplemente ha de poder implementar Una API REST para aportar valores JSON.
+
+*Angular.js* es un complemento web y ha de ser usado como tal, es decir, no hemos de vernos obligados a implementar toda nuestra lógica con él. Podemos además utilizar otras tecnologías que lo complementen.
+
+
 
