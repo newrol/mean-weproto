@@ -19,7 +19,7 @@ Creemos una web con ángular muy simple:
     <body>
         <h1>suma {{ 1 + 1 }}</h1>
         
-    <script>
+    <script
     <!-- nuestra ruta de ángular -->
     </script>
     </body>
@@ -39,7 +39,7 @@ muestro un ejemplo simple pero interactivo:
         <input type="text" ng-model="name" placeholder="Introduzca su nombre"
         <h1>bienvenido <span ng-bind="name"></span></h1>
         
-    <script>
+    <script
     <!-- nuestra ruta de ángular -->
     </script>
     </body>
