@@ -50,5 +50,6 @@ En el anterior ejemplo pdremos observar como el saludo cambia en tiempo real res
 
 ![](pepe.png)
 
+Tras estas dos breves aplicaciones se mostrará la sintaxis de Angular.
 
 
