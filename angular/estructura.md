@@ -15,8 +15,8 @@ La forma de definir un módulo es:
 ```javascript
     angular.module.('module-name', []);
 ```
-            * El primer argumento es el nombre del módulo
-            * El segundo argumento es un array con los nombre de los módulos que dependen de él
+        * El primer argumento es el nombre del módulo
+        * El segundo argumento es un array con los nombre de los módulos que dependen de él
 
 ```javascript
     //Un módulo llamado fooModule que depende de los modulos lib1 y lib2:
@@ -41,9 +41,38 @@ Por ejemplo:
 
 ```html
     
-    <html ng-app="module-name"
-    <
+    <html ng-app="module-name">
     
+    <!-- Resto del código -->
+    
+    </html>
+```
+Los módulos puedes estar declarados como scripts dentro del código html o en ficheros de scripts que son importados dentro del código, la segunda opción es la
+Más elegante, sobre todo para aplicaciones de gran embergadura.
+
+
+###Controlador
+
+Ahora que tenemos el envoltorio llenemoslo con las diferentes funciones que deseamos. de ello se encargará cada uno de nuestros controladores. Sus tareas son:
+
+* recolectar los datos del servidor para servirlos en la vista.
+
+* decidir que partes de la lógica se muestran al usuario.
+
+* Decidir con qué componentes dinámicas de la vista se muestran al usuario.
+
+* Controlar la interacción del usuario con la vista; validar campos, formatos, etc.
+
+para poder usar un controlador primero hay que haber declarado un modelo. Luego dentro de la etiqueta que limitará la jurisdicción de nuestro controlador realizaremos la llamada:
+
+```javascript
+     <html ng-app="module-name">
+    
+    <!-- Cabeceraa -->
+    
+    <body ng-controllerg
+    
+    </html>
 ```
 
 
