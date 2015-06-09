@@ -45,3 +45,8 @@ muestro un ejemplo simple pero interactivo:
     </body>
     </html>
 ```
+
+En el anterior ejemplo pdremos observar como el saludo cambia en tiempo real respecto al nombre que escribamos en el input:
+
+![imagen](pepe.png)
+
