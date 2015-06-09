@@ -47,7 +47,9 @@ Por ejemplo:
     
     </html>
 ```
-Los módulos puedes estar declarados como scripts dentro del código html o en ficheros de scripts que son importados dentro del código, la segunda opción es la
+Los módulos puedes estar declarados como scripts dentro del código html o en ficheros de scripts que son importados 
+
+dentro del código, la segunda opción es la
 Más elegante, sobre todo para aplicaciones de gran embergadura.
 
 
