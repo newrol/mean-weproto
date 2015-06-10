@@ -8,8 +8,6 @@ Lo primero que haremos será descargar los framework de bootstrap (para hacer la
     
 
 
-
-
 Bootstrap es simplemente un framework css con una serie aspectos visuales que nos ayudará a hacer nuestra web más estetica de forma muy simple.
 
 Al descargar bootstrap hemos de añadir además de la librería javascript el directorio que contendrá la hoja de estilos.
