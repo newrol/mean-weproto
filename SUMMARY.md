@@ -61,6 +61,8 @@
     * [Caracteristicas](angular/caracteristicas.md)
     * [Primeros pasos](angular/primeros.md)
     * [Estructura](angular/estructura.md)
+    * [Cliente Angular.js en myuserlist](angular/myuserlist.md)
+    
     
 
 
