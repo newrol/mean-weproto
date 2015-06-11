@@ -27,7 +27,7 @@ Nuestro controlador de Ángular.js sera creado bajo el nombre de *controlPanelCo
 
 Lo siguiente será crear la vista web que hará las funciones de panel de contol. el fichero .html será creado dentro del siguiente directorio con el nombre de *controlPanel.html*
 
- /site/public/views/
+    /site/public/views/
  
  Lo primero que haremos será crear nuestra cabecera e importar las librerias y nuestro cotrolador:
  
