@@ -7,6 +7,9 @@ Lo primero que hemos dehacer es decarganos la versión .min(sin espacios para ah
     
     <script type="text/javascript" src="angular.min.js"></script>
 ```
+
+Ángular.js requiere de jquery para poder funcionar por lo tanto hemos de descargarlo y enlazarlo en la web de la misma forma que se ha hecho en el código anterior.
+
 de esta forma ya podríamos hacer uso de las funcionalidades de Angular.js. que como en todo framework web consiste en realizar una serie de operaciones y en caso de querer interactuar con el usuario se genera código html dinánico que se incrusta en la web que se está mostrando. 
 
 Para situar el lugar donde queremos que Ángular.js genere el código se usa *"" {{ valores }}*, el "juego" de las dos llaves es muy característico de  *handlebars*.
