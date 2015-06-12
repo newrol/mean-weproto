@@ -42,6 +42,8 @@ Lo siguiente será crear la vista web que hará las funciones de panel de contol
     </head>
 ```
 
+###Añadir usuario
+
 Después crearemos la vista del componente para crear un nuevo usuario. Lo crearemos bajo el nombre de *create-user.html* en el directorio:
 
     /site/public/views/
@@ -103,9 +105,17 @@ El código que incluiremos es el siguiente:
     </div>
     </selection>    
 ```
-En este código generará un botón que al pulsarlo abrirá un dialogo para crear un nuevo usuario dentro de la tabla.
+En este código generará un botón que al pulsarlo abrirá un dialogo para crear un nuevo usuario dentro de la tabla:
 
+![](nuevo-usuario.png)
 
+Ahora vincualaremos el componente al panel de control añadiendo la etiqueta que hace referencia a la directiva de crear usuario en nuestro controlador:
+
+```html
+    <body>
+        <create-user></create-user>
+    </body>    
+```
 
 Después añadiremos las rutas de los script, las librerías y la web dentro de nuestro fichero de express. El código lo añandiremos entre  las llamadas a las rutas de la api y la ruta para la página de error 404.
 
@@ -141,6 +151,8 @@ Después añadiremos las rutas de los script, las librerías y la web dentro de 
 
 Llegado a este punto y antes de continuar con el ejemplo es conveniente testear que se puede acceder correctamente a la web desde el navegador y que se cargan todos los ficheros necesarios en el navegador. Pues es muy común cometer errores en los links a las rutas, y si se debuggea posteriormente puede ser una tarea muy tediosa.
 
+
+###Añadir listado de usuarios
 
 
 
