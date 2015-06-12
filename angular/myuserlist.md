@@ -42,6 +42,71 @@ Lo siguiente será crear la vista web que hará las funciones de panel de contol
     </head>
 ```
 
+Después crearemos la vista del componente para crear un nuevo usuario. Lo crearemos bajo el nombre de *create-user.html* en el directorio:
+
+    /site/public/views/
+    
+El código que incluiremos es el siguiente:
+
+```html
+    <selection>
+    <button href="#" class="btn btn-lg btn-primary"
+       id="filter-btn"
+       data-toggle="modal"
+       data-target="#basicModal">Nuevo Usuario<span class="badge" id="filterCount"></span></button>
+    
+       <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h2 class="modal-title" id="myModalLabel">Nuevo usuario</h2>
+                </div>	
+                <div> 
+                	<h3>Datos del nuevo usuario</h3>
+                	<form ng-submit="submit()">
+                	<div class="form-group">
+        				<label>Nick</label>
+        				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="introduce el nick"
+        				data-ng-model="user.nick" required>
+      				</div>
+      				<div class="form-group">
+        				<label>Nombre</label>
+        				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="introduce el nombre"
+        				data-ng-model="user.name">
+      				</div>
+      				<div class="form-group">
+        				<label>Apellido</label>
+        				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="introducir el apellido"
+        				data-ng-model="user.surname" required>
+      				</div>
+      				<div class="form-group">
+        				<label>Email</label>
+        				<input type="mail" class="form-control" id="exampleInputEmail1" placeholder="introducir el email"
+        				data-ng-model="user.mail">
+      				</div>
+    		            <div>
+    			            <label>Nick: {{user.nick}}</label>
+    			            </br>
+    			            <label>Nombre {{user.name}}</label>
+    			            </br>
+    			            <label>Apellido: {{user.surname}}</label>
+    			            </br>
+    			            <label>Email: {{user.mail}}</label>
+    			            </div>
+    		            <div class="modal-footer">
+    		                <button type="button" class="btn btn-default" data-ng-click='clear(user)' >Limpiar</button>
+    		                <input type="submit" class="btn btn-primary" value="Crear"></button>
+    		        	</div>
+    		        </form>	
+        </div>
+      </div>
+    </div>
+    </selection>    
+```
+En este código generará un botón que al pulsarlo abrirá un dialogo para crear un nuevo usuario dentro de la tabla.
+
+
+
 Después añadiremos las rutas de los script, las librerías y la web dentro de nuestro fichero de express. El código lo añandiremos entre  las llamadas a las rutas de la api y la ruta para la página de error 404.
 
 ```javascript
@@ -74,7 +139,8 @@ Después añadiremos las rutas de los script, las librerías y la web dentro de 
     });
 ```
 
- 
- 
+Llegado a este punto y antes de continuar con el ejemplo es conveniente testear que se puede acceder correctamente a la web desde el navegador y que se cargan todos los ficheros necesarios en el navegador. Pues es muy común cometer errores en los links a las rutas, y si se debuggea posteriormente puede ser una tarea muy tediosa.
+
+
 
 
