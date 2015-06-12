@@ -29,10 +29,17 @@ Lo siguiente será crear la vista web que hará las funciones de panel de contol
 
     /site/public/views/
  
- Lo primero que haremos será crear nuestra cabecera e importar las librerias y nuestro cotrolador:
+ Lo primero que haremos será crear nuestra cabecera e importar las librerias y nuestro cotrolador, así como vincular nuestro modulo con la web:
  
 ```html
-
+    <html ng-app="app">
+    <head>
+       <link rel="stylesheet" href="/styles/bootstrap.min.css" type="text/css">        
+      <script src="/lib/jquery-1.11.3.min.js"></script> 
+      <script src="/lib/bootstrap.min.js"></script>
+      <script src="/lib/angular.min.js"></script>
+      <script src="/controllers/controlPanelController.js"></script> 
+    </head>
 ```
 
  
