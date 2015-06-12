@@ -62,7 +62,8 @@
     * [Primeros pasos](angular/primeros.md)
     * [Estructura](angular/estructura.md)
     * [Cliente Angular.js en myuserlist](angular/myuserlist.md)
-    
+        * Configuración general
+        * 
     
 
 
