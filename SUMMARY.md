@@ -63,7 +63,8 @@
     * [Estructura](angular/estructura.md)
     * [Cliente Angular.js en myuserlist](angular/myuserlist.md)
         * Configuración general
-        * 
+        * Añadir usuario
+        * Añadir listado de usuarios
     
 
 
