@@ -42,6 +42,38 @@ Lo siguiente será crear la vista web que hará las funciones de panel de contol
     </head>
 ```
 
+Después añadiremos las rutas de los script, las librerías y la web dentro de nuestro fichero de express. El código lo añandiremos entre  las llamadas a las rutas de la api y la ruta para la página de error 404.
+
+```javascript
+    app.use(express["static"](__dirname + '/public'));
+
+    //web route
+    
+    app.get('/',function(req, res){
+    	res.sendFile(properties.path + 'site/public/views/controlPanel.html');
+    });
+    
+    
+    app.get('/create-user',function(req, res){
+    	res.sendFile(properties.path + 'site/public/views/create-user.html');
+    });
+    
+    
+    app.get('/lib',function(req, res){
+    	res.sendFile(properties.path + 'site/public/lib');
+    });
+    
+    
+    app.get('/styles',function(req, res){
+    	res.sendFile(properties.path + 'site/public/styles');
+    });
+    
+    
+    app.get('/controllers',function(req, res){
+    	res.sendFile(properties.path + 'site/public/controllers');
+    });
+```
+
  
  
 
