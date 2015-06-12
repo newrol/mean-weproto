@@ -1,5 +1,7 @@
 ##Cliente Angular.js en myuserlist
 
+###Configuración general
+
 En este capitulo desarrollaremos el cliente de del pequeño servidor que creamos con anterioridad. Dicho cliente estará comprendido por dos componentes de Ángular.js; un pequeño formulario para crear nuevos usuario y una tabla que nos mostrará la lista de todos ellos. 
 
 Lo primero que haremos será descargar los framework de bootstrap (para hacer las agradable a la vista la web) y Ángular.js y los introduciremos en la siguiente ruta:
