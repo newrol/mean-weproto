@@ -180,6 +180,8 @@ Para termiar, dentro de body añadiremos la referencia a la tabla que más tarde
     
 Dentro de *controlPanelController.js* injectaremos las dependicias de las librerías dentro de la declaración del módulo:
 
+    var app = angular.module('app', ['ngAnimate', 'ngTouch','ui.grid']);
+
     
 
 
