@@ -70,8 +70,8 @@ La primera funcionalidad que le vamos a añadir al cliente es la de añadir nuev
  				$scope.user = {} 	
  			};
 		}
-	};
-}]);
+	    };
+    }]);
 
 
 
