@@ -9,7 +9,6 @@ Lo primero que haremos será descargar los framework de bootstrap (para hacer la
     /site/public/lib
     
 
-
 Bootstrap es simplemente un framework css con una serie aspectos visuales que nos ayudará a hacer nuestra web más estetica de forma muy simple.
 
 Al descargar bootstrap hemos de añadir además de la librería javascript el directorio que contendrá la hoja de estilos.
@@ -24,7 +23,10 @@ Nuestro controlador de Ángular.js sera creado bajo el nombre de *controlPanelCo
     /site/public/controller
  
  
- -----------------------------------------------
+ Dentro de este fichero incluiremos la declaración del módulo principal de la aplicación:
+ 
+    var app = angular.module('app', ['ngAnimate', 'ngTouch','ui.grid']);
+
     
 
 Lo siguiente será crear la vista web que hará las funciones de panel de contol. el fichero .html será creado dentro del siguiente directorio con el nombre de *controlPanel.html*
@@ -197,6 +199,10 @@ app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridCon
  	    $scope.userData = data;
  	    });  
     }]);
+    
+Y con este último añadido ya tendríamos la lista de todos los usuarios y la posibilidad de crearlos dentro de nuesta app de ejemplo.
+
+
 
     
 
