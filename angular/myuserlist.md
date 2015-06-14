@@ -48,29 +48,29 @@ Lo siguiente será crear la vista web que hará las funciones de panel de contol
 La primera funcionalidad que le vamos a añadir al cliente es la de añadir nuevos clientes. Para ello usaremos una directiva que incluirá el controlador con la llamada al método post de nuestro server.
 
     app.directive('createUser', ['$http', function($scope){
-	// Runs during compile
-	return {
-		restrict: 'E',
-		templateUrl: '/views/create-user.html',
-		controller: function($scope, $http){
-
-			$scope.submit = function() {
-	
- 				$http.post('http://localhost:3000/api/user', $scope.user).
-				  success(function(data, status, headers, config) {	    
-  					alert('usuario creado con exito');
-  					$scope.user = {}
-  				}).
-				error(function(data, status, headers, config) {
-				    alert(status + 'El usuario no ha podido crearse');
-				});
- 			};
-
- 			$scope.clear = function(user){
- 				$scope.user = {} 	
- 			};
-		}
-	    };
+    	// Runs during compile
+    	return {
+    		restrict: 'E',
+    		templateUrl: '/views/create-user.html',
+    		controller: function($scope, $http){
+    
+    			$scope.submit = function() {
+    	
+     				$http.post('http://localhost:3000/api/user', $scope.user).
+    				  success(function(data, status, headers, config) {	    
+      					alert('usuario creado con exito');
+      					$scope.user = {}
+      				}).
+    				error(function(data, status, headers, config) {
+    				    alert(status + 'El usuario no ha podido crearse');
+    				});
+     			};
+    
+     			$scope.clear = function(user){
+     				$scope.user = {} 	
+     			};
+    		}
+        };
     }]);
 
 
