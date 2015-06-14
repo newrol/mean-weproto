@@ -27,7 +27,6 @@ Nuestro controlador de Ángular.js sera creado bajo el nombre de *controlPanelCo
  
     var app = angular.module('app', [])
 
-
 Lo siguiente será crear la vista web que hará las funciones de panel de contol. el fichero .html será creado dentro del siguiente directorio con el nombre de *controlPanel.html*
 
     /site/public/views/
