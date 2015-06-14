@@ -176,7 +176,12 @@ Una vez localizados los añadiremos:
      
 Para termiar, dentro de body añadiremos la referencia a la tabla que más tarde definiremos en el controlador:
 
-<div id="userGrid" ui-grid="gridOptions" class="grid"></div>
+    <div id="userGrid" ui-grid="gridOptions" class="grid"></div>
+    
+Dentro de *controlPanelController.js* injectaremos las dependicias de las librerías dentro de la declaración del módulo:
+
+    
+
 
 
 
