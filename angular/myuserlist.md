@@ -188,12 +188,16 @@ Después añadimos el controlador que realizará la petición al servidor.
 
 
 app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridConstants){
+    
+    
+app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridConstants){
 
     $http.get('http://localhost:3000/api/allUsers')
         .success(function(data){
- 	  $scope.userData = data;
- 	});  
-}]);
+ 	    $scope.userData = data;
+ 	    });  
+    }]);
+
     
 
 
