@@ -182,6 +182,8 @@ Dentro de *controlPanelController.js* injectaremos las dependicias de las librer
 
     var app = angular.module('app', ['ngAnimate', 'ngTouch','ui.grid']);
 
+Como se puede ver hemos añadido a la aplicación las dependecnias 'ngAnimate', 'ngTouch', y 'ui.grid'
+
     
 
 
