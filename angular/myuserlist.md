@@ -184,6 +184,16 @@ Dentro de *controlPanelController.js* injectaremos las dependicias de las librer
 
 Como se puede ver hemos añadido a la aplicación las dependecnias 'ngAnimate', 'ngTouch', y 'ui.grid'
 
+Después añadimos el controlador que realizará la petición al servidor.
+
+
+app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridConstants){
+
+    $http.get('http://localhost:3000/api/allUsers')
+        .success(function(data){
+ 	  $scope.userData = data;
+ 	});  
+}]);
     
 
 
