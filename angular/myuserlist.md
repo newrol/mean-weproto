@@ -156,5 +156,18 @@ Llegado a este punto y antes de continuar con el ejemplo es conveniente testear 
 
 ###Añadir listado de usuarios
 
+Descargaremos el proyecto ui-grid desde el respositorio de github en la url:
+
+    https://github.com/angular-ui/ui-grid.info/tree/gh-pages/release
+    
+Desde donde añadiremos el fichero css y el fichero javascript cada uno a los respectivos directorios de librerias y hojas de estilo de nuestro proyecto. Después añadiremos las rutas en nuestro *ControlPanel.html*
+
+    Ficheros de ui.grid necesarios:
+    
+    ui-grid-unstable.min.css
+    ui-grid-unstable.min.js
+    
+    
+
 
 
