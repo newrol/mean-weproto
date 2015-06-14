@@ -173,7 +173,10 @@ Una vez localizados los añadiremos:
      <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid-unstable.css" type="text/css">
      
      <script src="http://ui-grid.info/release/ui-grid-unstable.js"></script>
-    
+     
+Para termiar, dentro de body añadiremos la referencia a la tabla que más tarde definiremos en el controlador:
+
+<div id="userGrid" ui-grid="gridOptions" class="grid"></div>
 
 
 
