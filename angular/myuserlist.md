@@ -167,6 +167,12 @@ Desde donde añadiremos el fichero css y el fichero javascript cada uno a los re
     ui-grid-unstable.min.css
     ui-grid-unstable.min.js
     
+Una vez localizados los añadiremos:
+
+
+     <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid-unstable.css" type="text/css">
+     
+     <script src="http://ui-grid.info/release/ui-grid-unstable.js"></script>
     
 
 
