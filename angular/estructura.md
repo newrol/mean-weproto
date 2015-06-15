@@ -125,18 +125,13 @@ Una vez que se manejan las directivas son muy útiles para desarrollar códigos 
 Son usados para compartir objetos entre diferentes controladores y su nomenclatura es muy simple
 
 ```javascript
-    .factory("descargasFactory", function(){
-    var descargasRealizadas = ["Manual de Javascript", "Manual de jQuery", "Manual de AngularJS"];
+    app.factory("descargasFactory", function(){
+        var descargasRealizadas = ["Manual de Javascript", "Manual de jQuery", "Manual de AngularJS"];
 
-    var interfaz = {
-        nombre: "Manolo",
-        getDescargas: function(){
-            return descargasRealizadas;
-        },
-        nuevaDescarga: function(descarga){
-            descargasRealizadas.push(descarga);
+        var objetoParaCompartir = {
+            fookey : 'fooValue',
+            fookey1; 'fooValue1'
         }
-    }
-    return interfaz;
-})
+        return objetoParaCompartir;
+    });
 ```
