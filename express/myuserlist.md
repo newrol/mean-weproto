@@ -1,6 +1,6 @@
 ##Express - API REST en MyUserList
 
-En este apartado añadiremos *express.js* a nuestra aplicación laboratorio, así como de una api rest básica que nos permita consultar y añadir nuevos usuarios.
+En este apartado añadiremos *Express.js* a nuestra aplicación laboratorio, así como de una api rest básica que nos permita consultar y añadir nuevos usuarios.
 
 Lo primero es añadir las librerias necesarias para implementar express y la API.
 
@@ -69,7 +69,7 @@ y dentro el fichero *myuserlist.js* con el contenido de nuestro servidor.
     });
     
     
-    //erro
+    //error
     app.listen(app.get('port'), function(){
     	console.log( 'Express started on http://localhost:' +
     	app.get('port') + '; press Ctrl-C to terminate.' );
@@ -78,8 +78,10 @@ y dentro el fichero *myuserlist.js* con el contenido de nuestro servidor.
 El siguiente paso será añadir al objeto *properties.js*
 la ruta de la base de datos para que mongoose pueda localizarla:
 
+```javascript
     databaseURI : 'mongodb://localhost/mobility',
-    
+```
+
 Con nuestro servidor Configurado crearemos el controlador que unirá las consultas dao con la api rest. Para ello creamos el siguiente directorio:
 
     /app/controllers
