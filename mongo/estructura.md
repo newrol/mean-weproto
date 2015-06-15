@@ -41,7 +41,10 @@ dependiendo del valor de cada clave su tipo de dato será diferente, en mongoDB 
 
 * **date:** Guarda los milisegundos pasados desde el 1 de enero de 1970 hasta el momento suministrado.
 
-		{ “foo” : new Date() }
+```javascript
+    { “foo” : new Date() }
+
+```
 
 
 * **array:** Guarda una lista de valores
