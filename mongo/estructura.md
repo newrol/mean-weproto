@@ -19,13 +19,17 @@ dependiendo del valor de cada clave su tipo de dato será diferente, en mongoDB 
 
 * **boolean:** valor booleano para expresar true o false.
 		
-        { “foo” :  true }
+```javascript
+    { “foo” :  true }
+```
 
 * **number:** Valores del coma flotante de 64 bits.
 
-		{ “foo” :  3 }, { “foo” : 5.12 }
+```javascript
+    { “foo” :  3 }, { “foo” : 5.12 }
+```
 
-	      //podríamos “forzar” a mongoDB a usar enteros de 32 bits con esta función:
+	      //podríamos “forzar” a *MongoDB* a usar enteros de 32 bits con esta función:
 
 		{“foo : NumberInt(“ 5”) }
 
