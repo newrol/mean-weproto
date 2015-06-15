@@ -61,14 +61,16 @@ Con nuestro esquema creado solo tendremos que crear un objeto envoltorio del mis
  
 ```javascript
     var Value = mongoose.model('value', valueSchema); 
-
 ```
 
 Para crear nuevas instancias en base a value usaremos el *new*
 
+```javascript
     var value1 = new Value;
     var value2 = new Value;
-    
+
+```
+
 Ahora tenemos dos valores dieferentes con sus propiedades. Ahora podremos ponerle titulo y valor a nuestros objetos:
 
     value1.title = "titulo1";
