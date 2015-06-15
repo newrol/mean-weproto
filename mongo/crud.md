@@ -108,12 +108,15 @@ Como podemos observar primero realizamos la consulta, después introducimos todo
 
 ```javscript
     db.fooCollection.update({"name" : "pepe"},{"name" : "pepe", "apellido" : "nuevo"},{upsert : true})
-
 ```
 
 Como se ha encontrado la condición de la consulta la consola nos devolverá la siguiente salida:
 
+```javascript
+
     WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+```
 
 Donde se nos indica que se ha encontrado un valor coincidente y que uno de los valores se ha modificado.
 
