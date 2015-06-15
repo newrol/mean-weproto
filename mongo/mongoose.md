@@ -76,14 +76,17 @@ Ahora tenemos dos valores dieferentes con sus propiedades. Ahora podremos ponerl
     value1.title = "titulo1";
     value2.title = "titulo2";
 ```
-El siguiente paso es guardar nuestros valores en la base de datos. En el anterior capitulo mostramos como trabaja mongoDB como su shell base y usando las funciones allí mostradas podríamos hacer nuestras consultas si estubieramos usando el driver básico. Pero como mongoose se nos simplifica mucho esta tarea:
+El siguiente paso es guardar nuestros valores en la base de datos. En el anterior capitulo mostramos como trabaja *MongoDB* como su shell base y usando las funciones allí mostradas podríamos hacer nuestras consultas si estuvieramos usando el driver básico. Pero como *Mongoose* se nos simplifica mucho esta tarea:
 
 Primero guardaremos value1:
+
+```javascript
 
     value1.save(function(err){
       if(err) console.log('No se ha podido guardar este valor');
     });
- 
+
+```
 Al ejecutar la función *save()* se nos devolverá un primer callback en caso de error y un segundo con objeto guardado y su correspondiente _id asignado, en este caso solo queremos saber cuando se ha producido un error.
 
 Borremos value1:
