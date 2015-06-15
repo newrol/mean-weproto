@@ -42,15 +42,17 @@ A lo que se nos retornará algo parecido a esto:
 
 ```
 
-Debemos recordar que el campo “_id” es la clave autogenerada por mongoDB.
+Debemos recordar que el campo “_id” es la clave autogenerada por *mongoDB*.
 	
-Si al contrario usáramos el método findOne() por defecto se nos devolvería un 	cursor  con el primer documento de la colección. 
+Si al contrario usáramos el método *findOne()* por defecto se nos devolvería un 	cursor  con el primer documento de la colección. 
 
+```javascript
     {
     	"_id" : ObjectId("556ecc27e00dd01ca454f03c"),
     	"name" : "antonia",
     	"apellido" : "garcia"
     }
+```
 
 Al hacer una consulta podemos especificar una serie de condicionales 
 realizarla.  Estos condicionales son:
