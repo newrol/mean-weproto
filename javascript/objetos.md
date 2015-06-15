@@ -67,7 +67,7 @@ La idea de la herencia de JavaScript se basa en prototipos, para ello se define 
 
 Más tarde para añadir propiedades heredadas a nuestro  solo hemos de añadir una nueva referencia vinculada al objeto construido.
 
-Para añadir una nueva propiedad al prototipo de fooDao() solo tendríamos que escribir el siguiente código:
+Para añadir una nueva propiedad al prototipo de *fooDao()* solo tendríamos que escribir el siguiente código:
 
 ```javascript
     //Creamos el objeto que heredará las propiedades  a partir de él. 
