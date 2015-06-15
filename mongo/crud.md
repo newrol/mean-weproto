@@ -12,7 +12,6 @@ Insertaremos dos  nuevos documento dentro de la coleción fooCollection.
 
 ```
 
-
 Al insertar el primer documento se creará la colección fooCollection y se insertará e documento, al insertar el segundo documento como la colección ya existe, simplemente se creará el nuevo registro.	
 
 ###Consultar
