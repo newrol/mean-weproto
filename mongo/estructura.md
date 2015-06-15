@@ -69,13 +69,17 @@ Es conveniente tener en cuenta que una clave no puede obtener el caracter \0 pue
 
 MongoDB es sensitivo al tipo y al caracter por lo tanto:
 
+```javascript
     { “foo” : 3 }               
 	{“foo” : 3}
+```
 
 sería distitnto de:                     
 
+```javascript
 	{“foo” : “3” }   
 	{“Foo”: 3 }
+```
 
 
 un mismo documento de mongoDB no puede contener las mismas claves.
