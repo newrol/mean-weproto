@@ -71,27 +71,25 @@ Ahora para llamar a fileB desde fileA haríamos algo así.
 
 
 ```javascript
-
 	//importamos nuestro propierties para acceder a la ruta:
 	var properties = require(properties).properties;
 	
 	//importamos el fichero B valiendonos de properties:
 	var fileB = require(properties.path + ‘lib/fileB’)
-
 ```
 
 Ejecutar el código ahora nos daŕia un error de properties no encontrado pues aún no hemos creado el enlace a Node_modules. Procedamos.
 
-Primero instalaremos grunt en nuestro equipo. A diferencia de Npm, con grunt necesitaremos realizar dos pasos, instalar el entorno de ejecución global para poder hacer uso de grunt en nuestro equipo y además iniciarlo para cada proyecto donde queramos creárlo.
+Primero instalaremos *Grunt* en nuestro equipo. A diferencia de *Npm*, con *Grunt* necesitaremos realizar dos pasos, instalar el entorno de ejecución global para poder hacer uso de *Grunt* en nuestro equipo y además iniciarlo para cada proyecto donde queramos creárlo.
 
-Para instalar node.js en nuestra computadora, llamaremos a la siguiente orden desde terminal:
+Para instalar *Node.js* en nuestra computadora, llamaremos a la siguiente orden desde terminal:
 
     npm install -g grunt	
     npm install -g grunt-cli	
 
-Con -g ordenamos a npm que instale grunt-cli en el sistema.
+Con -g ordenamos a *Npm* que instale *grunt-cli* en el sistema.
 
-con grunt instalado hemos de añadir el fichero Gruntfile.js, dentro de la raíz de nuestro proyecto, que se encargará de almacenar toda la configuración de los plugins de grunt que añadamos y las diferentes tareas.
+con *Grunt* instalado hemos de añadir el fichero *Gruntfile.js*, dentro de la raíz de nuestro proyecto, que se encargará de almacenar toda la configuración de los plugins de *Grunt* que añadamos y las diferentes tareas.
 	
 ```javascript
     /*	
@@ -112,15 +110,14 @@ con grunt instalado hemos de añadir el fichero Gruntfile.js, dentro de la raíz
             'genKey']);
 
 	};
-
 ```
 	
 Con esta configuración tendríamos a nuestra disposición la tarea build para crear el enlace simbólico en properties. de forma que solo tendríamos que ejecutar esta orden cuando nos clonamos del repositorio o cuando movemos el proyecto de un pc a otro.
 
 para ejecutar la orden hemos de dirigirnos con nuestra terminal al directorio ráiz del proyecto y lanzar el siguiente comando:
 
-grunt build 
+    grunt build 
   
 Y tendríamos properties enlazado a node_modules y nuestro problema con los “imports” solventado.
 
-En los siguientes capítulos, conforme se vayan mostrando nuevas funcionalidades se extenderá en el uso de grunt.
+En los siguientes capítulos, conforme se vayan mostrando nuevas funcionalidades se extenderá en el uso de *Grunt*.
