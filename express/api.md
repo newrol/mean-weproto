@@ -6,7 +6,7 @@ Es un estilo de arquitectura software para sistemas hipermedia distribuidos como
 
 en la actualidad se usa en el sentido más amplio para describir cualquier interfaz web simple que utiliza XML y HTTP, sin las abstracciones adicionales de los protocolos basados en patrones de intercambio de mensajes como el protocolo de servicios web SOAP.
 
-Una api rest es prácticamente imprescidible a la haora de utilizar tecnologías como *Ángular.js* o para usar servidores que suministrarán de una determinada lógica a clientes heterógeneos; aplicaciones nativas móviles al mismo tiempo que web, wearables, etc.
+Una api rest es prácticamente imprescidible a la haora de utilizar tecnologías como *Angular.js* o para usar servidores que suministrarán de una determinada lógica a clientes heterógeneos; aplicaciones nativas móviles al mismo tiempo que web, wearables, etc.
 
 ###Caracteristicas de una API REST
 
