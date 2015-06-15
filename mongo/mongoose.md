@@ -101,10 +101,12 @@ en caso de desear actualizar con nuevos valores solo tendríamos que modificiar 
     this.update = function(opportunity, callback){
         opportunity.update(callback);
     };
-
 ```
   
 En cambio para realizar una consulta no usaremos un objeto creado, si no que utilizaremos el objeto envoltorio.
+
+
+```javascript
 
     //Primero construimos la query sobre el modelo.
     var query = Value.findOne({'title' : 'titulo1'});
@@ -115,7 +117,8 @@ En cambio para realizar una consulta no usaremos un objeto creado, si no que uti
         if (err) Console.log('ha sucedido un error');
         else console.log(values);
     });    
-    
+
+```
 En ese caso se nos devolverá un objeto con los valores de value1, si la consulta devulveria más de uno lo que se nos devolvería sería una colección de todos los valores encontrados.
 
 Como podemos ver mongoose facilita mucho la interación con la base de datos y abstrae nuestro esquema de datos de las diferencias entre las dos plataformas. Esta funcionalidad hace de mongoose + node.js un planteamiento perfecto a la hora de prototipar apliaciones que requieran una conexión a  una base de datos.
