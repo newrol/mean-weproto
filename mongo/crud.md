@@ -100,7 +100,6 @@ Podemos usar el operador $or Para lanzar consultas enlazadas:
 Para actualizar un documento primero hemos de lanzar la consulta que seleccione el valor que queremos cambiar y después tendremos 
 
 ```javascript
-
     db.CollectionName.update({key : {$condition : “value”},{new values in format "key" : value"}, { upsert: true })
 
 ```
