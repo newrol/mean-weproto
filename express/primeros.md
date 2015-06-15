@@ -1,6 +1,6 @@
 ##Primeros pasos con Express.js
 
-El primer paso para usar express.js es añadirlo al proyecto actual de node.js para ello usaremos npm:
+El primer paso para usar *Express.js* es añadirlo al proyecto actual de node.js para ello usaremos npm:
 
     npm insstall --save express
 
