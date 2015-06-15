@@ -1,10 +1,10 @@
 ##Operaciones CRUD
 
-Dentro de una base de datos llamada datos fooDatabase crearemos una serie de colecciónes, documentos y practicaremos algunas consultas sobre ellos.
+Dentro de una base de datos llamada datos fooDatabase crearemos una serie de colecciones, documentos y practicaremos algunas consultas sobre ellos.
 
 ###Insertar 
 
-Insertaremos dos  nuevos documento dentro de la coleción fooCollection.
+Insertaremos dos  nuevos documento dentro de la colección fooCollection.
 
 ```javascript
 	> db.fooCollection.insert({"name" : "antonia", "apellido" : "garcia"})
@@ -119,7 +119,7 @@ Donde se nos indica que se ha encontrado un valor coincidente y que uno de los v
 
 ###Eliminar
 
-A la hora de realizar un borrado hemos de diferenciar entre borar una base de datos, borrar una colección o borrar uno o varios documentos.
+A la hora de realizar un borrado hemos de diferenciar entre borrar una base de datos, borrar una colección o borrar uno o varios documentos.
 
 * **borrar una base de datos:** nos situariamos dentro de la base de datos que deseamos borar y escribiríamos:
 
