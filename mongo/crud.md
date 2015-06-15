@@ -7,8 +7,8 @@ Dentro de una base de datos llamada datos fooDatabase crearemos una serie de col
 Insertaremos dos  nuevos documento dentro de la coleción fooCollection.
 
 ```javascript
-		> db.fooCollection.insert({"name" : "antonia", "apellido" : "garcia"})
-		>db.fooCollection.insert({"name" : "pepe", "apellido" : "Martinez"})
+	> db.fooCollection.insert({"name" : "antonia", "apellido" : "garcia"})
+	>db.fooCollection.insert({"name" : "pepe", "apellido" : "Martinez"})
 
 ```
 
