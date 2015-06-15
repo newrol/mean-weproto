@@ -2,7 +2,10 @@
 
 ###Documentos
 
+```javascript
     {  “nombre”  :  “foonombre”,  “apellido” : “fooApellido” }
+
+```
 
 La línea que se muestra arriba es un documento de mongoDB. Sus propiedades son nombre y apellido. Cada uno incluye sus correspondientes valores a su derecha.
 
