@@ -36,9 +36,11 @@ Primero listaremos todos los documentos de la colección fooCollection:
 A lo que se nos retornará algo parecido a esto:
 
 ```javascript
-    { "_id" : ObjectId("556ecc27e00dd01ca454f03c"), "name" : "antonia", "apellido" : "garcia" }
+    { "_id" : ObjectId("556ecc27e00dd01ca454f03c"),
+    "name" : "antonia", "apellido" : "garcia" }
 
-    { "_id" : ObjectId("556ecc46e00dd01ca454f03d"), "name" : "pepe", "apellido" : "Martinez" }
+    { "_id" : ObjectId("556ecc46e00dd01ca454f03d"),
+    "name" : "pepe", "apellido" : "Martinez" }
 
 ```
 
@@ -74,8 +76,8 @@ Ejemplo:
 Devolverá el cursor con el valor antonia:
 
 ```javascript
-    { "_id" : ObjectId("556ecc27e00dd01ca454f03c"), "name" : "antonia", "apellido" : "garcia" }
-
+    { "_id" : ObjectId("556ecc27e00dd01ca454f03c"),
+    "name" : "antonia", "apellido" : "garcia" }
 ```
 
 varios condicionales pueden ser aplicados dentro del mismo find respentando la siguiente nomenclatura:
@@ -88,8 +90,8 @@ varios condicionales pueden ser aplicados dentro del mismo find respentando la s
 Podemos usar el operador $or Para lanzar consultas enlazadas:
 
 ```javascript
-    db.fooCollection.find({"$or" : [{"name" : "pepe"},{"name" : "antonia"}]})
-
+    db.fooCollection.find({"$or" : [{"name" : "pepe"},
+    {"name" : "antonia"}]})
 ```
 
 
@@ -98,15 +100,16 @@ Podemos usar el operador $or Para lanzar consultas enlazadas:
 Para actualizar un documento primero hemos de lanzar la consulta que seleccione el valor que queremos cambiar y después tendremos 
 
 ```javascript
-    db.CollectionName.update({key : {$condition : “value”},{new values in format "key" : value"},
+    db.CollectionName.update({key : {$condition : “value”},
+    {new values in format "key" : value"},
     { upsert: true })
-
 ```
 
 Como podemos observar primero realizamos la consulta, después introducimos todos los valores que modificaremos y para terminar añadimos *upset :  true* para indicar que los cambios queden escritos, si no añadimos este único campo se nos imprimirá por pantalla una simulación de lo que ocurriría al aplicar el *update*
 
 ```javscript
-    db.fooCollection.update({"name" : "pepe"},{"name" : "pepe", "apellido" : "nuevo"},
+    db.fooCollection.update({"name" : "pepe"},
+    {"name" : "pepe", "apellido" : "nuevo"},
     {upsert : true})
 ```
 
