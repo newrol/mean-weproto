@@ -72,10 +72,25 @@ para poder usar un controlador primero hay que haber declarado un modelo. Luego 
     
     <!-- Cabeceraa -->
     
-    <body ng-controllerg
-    
+    <body ng-controller=
+     <!-- Código que podrá tratarse dentro del controlador -->
+    <h1>{{title}}</h1> 
+    </body> 
     </html>
 ```
 
+
+Después añadiremos las funcionalidades del controlador dentro bajo la declaración del modelo de nuestra aplicación:
+
+    app.controller("nombreCtrl", function(){
+    	
+    	$scope.title = 'pagina de prueba para el controlador'
+    });
+
+Ahora cuando se cargue la web, al llegar al body se cargará el controlador y se llamara a *$scope* que es el objeto que se encarga de comunicar el controlador con la parte de la vista. En el se cargarán todas las diferentes propiedades que deberemos mostrar más tarde.
+
+###Directivas
+
+Las directivas nos permiten hacer nuestra aplicación más modular aún. Su lógica está basada en declarar un bloque de la aplicación que esté vinculado a un código html y a un controlador especifico.
 
 
