@@ -4,7 +4,6 @@
 
 ```javascript
     {  “nombre”  :  “foonombre”,  “apellido” : “fooApellido” }
-
 ```
 
 La línea que se muestra arriba es un documento de mongoDB. Sus propiedades son nombre y apellido. Cada uno incluye sus correspondientes valores a su derecha.
@@ -14,8 +13,9 @@ dependiendo del valor de cada clave su tipo de dato será diferente, en mongoDB 
 * **null:** usado para representar que el valor es nulo y que al mismo tiempo no     
    existe….cosas de javascript…(usar solo en casos muy expecificos)
 
-		{ “foo” : null  }
-
+```javascript
+    { “foo” : null  }
+```
 
 * **boolean:** valor booleano para expresar true o false.
 		
