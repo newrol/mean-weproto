@@ -94,7 +94,7 @@ Este campo es , para mongoDB, la clave principal de el documento. este campo est
     
 ```
 
-Esta es la las de las claves de la escalabilidad de mongodb,  pues los id que generan son únicos para cada documento estén en la ejecución que se encuentren.
+Esta es la las de las claves de la escalabilidad de *MongoDB*,  pues los id que generan son únicos para cada documento estén en la ejecución que se encuentren.
 
 
 ###Colecciones
