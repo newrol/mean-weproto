@@ -68,13 +68,16 @@ realizarla.  Estos condicionales son:
 Ejemplo:
 
 ```javascript
-		>db.fooCollection.find({"name" : {"$eq" : "antonia"}})
-
+	>db.fooCollection.find({"name" : {"$eq" : "antonia"}})
 ```
 
 Devolverá el cursor con el valor antonia:
 
+```javascript
+
     { "_id" : ObjectId("556ecc27e00dd01ca454f03c"), "name" : "antonia", "apellido" : "garcia" }
+
+```
 
 varios condicionales pueden ser aplicados dentro del mismo find respentando la siguiente nomenclatura:
 
