@@ -18,7 +18,7 @@ Al insertar el primer documento se creará la colección fooCollection y se inse
 
 en lo referente a las consultas hay que tener claros una serie de conceptos:
 		
-* Se pueden lanzar consutas a la base de datos usando find() o findOne().
+* Se pueden lanzar consultas a la base de datos usando *find()* o *findOne()*.
 		
 * Se puede consular por condiciones.
 
@@ -29,13 +29,18 @@ en lo referente a las consultas hay que tener claros una serie de conceptos:
 
 Primero listaremos todos los documentos de la colección fooCollection:
 
-		>db.fooCollection.find()
+```javascript
+    >db.fooCollection.find()
+```
 
-A lo que se nos returnará algo parecido a esto:
+A lo que se nos retornará algo parecido a esto:
 
+```javascript
     { "_id" : ObjectId("556ecc27e00dd01ca454f03c"), "name" : "antonia", "apellido" : "garcia" }
 
     { "_id" : ObjectId("556ecc46e00dd01ca454f03d"), "name" : "pepe", "apellido" : "Martinez" }
+
+```
 
 Debemos recordar que el campo “_id” es la clave autogenerada por mongoDB.
 	
