@@ -107,7 +107,6 @@ En cambio para realizar una consulta no usaremos un objeto creado, si no que uti
 
 
 ```javascript
-
     //Primero construimos la query sobre el modelo.
     var query = Value.findOne({'title' : 'titulo1'});
       
@@ -117,7 +116,6 @@ En cambio para realizar una consulta no usaremos un objeto creado, si no que uti
         if (err) Console.log('ha sucedido un error');
         else console.log(values);
     });    
-
 ```
 En ese caso se nos devolverá un objeto con los valores de value1, si la consulta devulveria más de uno lo que se nos devolvería sería una colección de todos los valores encontrados.
 
