@@ -2,21 +2,21 @@
 
 ###Descripción
 
-Mongoose es la herramienta de modelado de objetos para mongoDB y node.js, lo que esto significa en terminos prácticos que tu solo tendrás que definir un modelo de datos en un solo lugar; tu código. Y este será portado directamente a la base de datos de mongoDB a la que estés conectado en ese momento. 
+*Mongoose* es la herramienta de modelado de objetos para *MongoDB* y *Node.js*, lo que esto significa en terminos prácticos que tu solo tendrás que definir un modelo de datos en un solo lugar; tu código. Y este será portado directamente a la base de datos de *mongoDB* a la que estés conectado en ese momento. 
 
-Podríamos elegir el driver básico de mongoDB para node.js, pero este elemento es solo recomendable en entornos críticos con unas carácteristicas especiales.
+Podríamos elegir el driver básico de *MongoDB* para *Node.js*, pero este elemento es solo recomendable en entornos críticos con unas características especiales.
 
-Mongose es bueno para:
+*Mongose* es bueno para:
 
 *  Cuando se buscar interactuar con un esquema de datos estructurados , ya que con nuestro esquema predefinido podremos realizar la mayoría de las tareas.
 
-* Aumentar la abstracción de la tecnología que usamos y simplificar el uso de la persistencia en node.js.
+* Aumentar la abstracción de la tecnología que usamos y simplificar el uso de la persistencia en *Node.js*.
 
-* Trabajar directamente sobre los ficheros JSON que nos devuelve mongoDB 
+* Trabajar directamente sobre los ficheros JSON que nos devuelve *MongoDB* 
 
 * Apollarnos en las queries que utilizamos, pues las consultas básicas que podamos hacer en la base datos vienen predefinidas en el esquema.
 
-Mongose no es bueno en:
+*Mongose* no es bueno en:
 
 * datos que no obedecen a esquema.
 
@@ -26,16 +26,18 @@ Mongose no es bueno en:
 
 ###Instalación
 
-mongoose puede ser instalado desde el gestor de paquetes NPM 
+*Mongoose* puede ser instalado desde el gestor de paquetes *Npm* 
     
     npm install --save mongoose
     
 ###Implementación
 
 Para comenzar a usar mongoose en nuestro código node.js primero hemos de importar el driver descargado a nuestro código:
-    
+
+```javascript
     var mongoose   = require('mongoose');
-    
+```
+
 Después nos conectaremos a la base de datos que deseemos:
 
     var fooDatabaseUri = 'mongodb://myBaseDeDatos';
