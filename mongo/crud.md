@@ -74,7 +74,6 @@ Ejemplo:
 Devolverá el cursor con el valor antonia:
 
 ```javascript
-
     { "_id" : ObjectId("556ecc27e00dd01ca454f03c"), "name" : "antonia", "apellido" : "garcia" }
 
 ```
@@ -82,7 +81,6 @@ Devolverá el cursor con el valor antonia:
 varios condicionales pueden ser aplicados dentro del mismo find respentando la siguiente nomenclatura:
 
 ```javascript
-
     db.CollectionName.find({key : {$conditional 1 : “value”, $contdiitonal2 : “value” …}})
     
 ```
@@ -113,7 +111,6 @@ Como podemos observar primero realizamos la consulta, después introducimos todo
 Como se ha encontrado la condición de la consulta la consola nos devolverá la siguiente salida:
 
 ```javascript
-
     WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 ```
@@ -125,13 +122,16 @@ Donde se nos indica que se ha encontrado un valor coincidente y que uno de los v
 A la hora de realizar un borrado hemos de diferenciar entre borar una base de datos, borrar una colección o borrar uno o varios documentos.
 
 * **borrar una base de datos:** nos situariamos dentro de la base de datos que deseamos borar y escribiríamos:
-    
-        db.dropDatabase()
 
+```javascript
+    db.dropDatabase()
+```
+    
 *  **Borrar una colección:** nos situariamos dentro de la base de datos y escribiríamos
 
-        db.drop_collection("Nombre de la coleción")
-        
+```javascript
+    db.drop_collection("Nombre de la coleción")
+```
 * **Borrar un documento:** Lanzaríamos una consulta pero en puesto de usar *find()* usaríamos *remove()*
 
         db.posts.remove({"name": "pepe"});
