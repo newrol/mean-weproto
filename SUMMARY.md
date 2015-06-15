@@ -23,7 +23,7 @@
     * [El laboratorio: MyUserList](node/laboratorio.md)
  
 * [MongoDB](mongo/introduccion.md)
-    * [introduccion](mongo/introduccion.md)
+    * [Introduccion](mongo/introduccion.md)
     * [Características](mongo/caracteristicas.md)
     * [Estructura](mongo/estructura.md)
         * Documentos
