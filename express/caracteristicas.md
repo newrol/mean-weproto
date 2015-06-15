@@ -1,10 +1,10 @@
 ##Características
 
-Muchas de las funcionalidades que nos aprta express.js serían implementables sin grandes costos de tiempo y esfuerzo sin él. No obstante conforme la aplicación va creciendo se agradece tener de un gestor de herramientas en tiempo de ejecución tan potente.
+Muchas de las funcionalidades que nos aporta *Express.js* serían implementables sin grandes costos de tiempo y esfuerzo sin él. No obstante conforme la aplicación va creciendo se agradece tener de un gestor de herramientas en tiempo de ejecución tan potente.
 
-Express busca ser nuestra herramienta de Scaffolding dentro de la aplicación. Es decir que nos basemos completamente el él para crear e lesqueleto de nuestra aplicación.
+*Express.js* busca ser nuestra herramienta de "Scaffolding" dentro de la aplicación. Es decir que nos basemos completamente el él para crear el esqueleto de nuestra aplicación.
 
-dentro de express trabajaremos de forma constante con dos objetos; Request y response. Ellos son los encargados de de recibir los datos de la petición web, y de servir la respuesta. Por lo tanto será de vital importancia tener un concepto general de ellos:
+dentro de *Express.js* trabajaremos de forma constante con dos objetos; Request y response. Ellos son los encargados de de recibir los datos de la petición web, y de servir la respuesta. Por lo tanto será de vital importancia tener un concepto general de ellos:
 
 * **request:** Suele ser pasado como parámtro a un callback, y él almacena las propiedes de la petición web: las cabeceras, los parámtros de entrada etc. Está basado en el objeto *htt.IncomingMessage* de node.js  Sus propiedades son:
 
@@ -66,4 +66,4 @@ dentro de express trabajaremos de forma constante con dos objetos; Request y res
     
     * **res.render(view, [locals], callback):** contiene el contexto por defecto para renderizar la vista.
     
-Para renderizar contenidos se puede usar *handlebars* el cual nos permite crear vistas web dinámicas. Más no es el objetivo de deste documento usar a express para servir de una web dinámica. Nosotros usaremos express para servir la api rest que nos permitirá obtener el contenido dinámico con una interfaz mutiplataforma y adaptada completamente al formato de JSON que estamos utilizando durante toda la aplicación. En el entorno de desarrollo usaremos express y node.js para servir el contenido estático de la web pero el programador ha de saber que para entornos de produccion esta practica no es aconsejable pues express no está optimizado para el contenido estático. Para entornos de producción lo ideal es usar un servidor *ngix* por delante de express para gestionar las peticiones estáticas y hacer de proxy para redirigir las peticiones REST a express.
+Para renderizar contenidos se puede usar *Handlebars* el cual nos permite crear vistas web dinámicas. Más no es el objetivo de deste documento usar a *Express.js* para servir de una web dinámica. Nosotros usaremos *Express.js* para servir la api rest que nos permitirá obtener el contenido dinámico con una interfaz mutiplataforma y adaptada completamente al formato de JSON que estamos utilizando durante toda la aplicación. En el entorno de desarrollo usaremos express y node.js para servir el contenido estático de la web pero el programador ha de saber que para entornos de produccion esta practica no es aconsejable pues express no está optimizado para el contenido estático. Para entornos de producción lo ideal es usar un servidor *ngix* por delante de express para gestionar las peticiones estáticas y hacer de proxy para redirigir las peticiones REST a express.
