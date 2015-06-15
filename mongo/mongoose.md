@@ -68,7 +68,6 @@ Para crear nuevas instancias en base a value usaremos el *new*
 ```javascript
     var value1 = new Value;
     var value2 = new Value;
-
 ```
 
 Ahora tenemos dos valores dieferentes con sus propiedades. Ahora podremos ponerle titulo y valor a nuestros objetos:
