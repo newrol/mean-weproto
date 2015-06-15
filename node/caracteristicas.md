@@ -1,7 +1,7 @@
 ##Características 
 
 
-Node.js incorpora varios "módulos básicos" compilados en el propio binario, que nos permiten realizar las tareas comunes para una aplicación web, los módulos por defecto  más importantes serían:
+*Node.js* incorpora varios "módulos básicos" compilados en el propio binario, que nos permiten realizar las tareas comunes para una aplicación web, los módulos por defecto  más importantes serían:
 HTTP y Https: para gestionar las conexiones web.
 
 * **OS:** para acceder al los elementos del sistema.
