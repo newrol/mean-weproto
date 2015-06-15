@@ -40,19 +40,24 @@ Para comenzar a usar mongoose en nuestro código node.js primero hemos de import
 
 Después nos conectaremos a la base de datos que deseemos:
 
+```javascript
     var fooDatabaseUri = 'mongodb://myBaseDeDatos';
-    
+
     mongoose.connect(fooDatabaseURI);
+```
+
     
-Con mongoose no hemos de precuparnos en un principio por la gestión de abrir y cerrar la conexión de la base de datos pues esta utiliza un pool de conexiones por defecto y el se encarga de gestioarlas.
+Con *Mongoose* no hemos de precuparnos en un principio por la gestión de abrir y cerrar la conexión de la base de datos pues esta utiliza un pool de conexiones por defecto y el se encarga de gestionarlas.
 
 El siguiente paso es crear el esquema de datos que utilizaremos:
 
+```javascript
     var valueSchema = new mongoose.Schema({
         title  : { type: String, required: true, unique: true },
         value :  { type :String, required:true },
     });
 
+```
 Con nuestro esquema creado solo tendremos que crear un objeto envoltorio del mismo:
 
     var Value = mongoose.model('value', valueSchema); 
