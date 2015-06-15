@@ -35,7 +35,9 @@ dependiendo del valor de cada clave su tipo de dato será diferente, en mongoDB 
 
 * **String:** caracteres UTF8
 		
-	     	{ “foo” : “String que deseemos incluir” }
+```javascript
+    { “foo” : “String que deseemos incluir” }
+```
 
 * **date:** Guarda los milisegundos pasados desde el 1 de enero de 1970 hasta el momento suministrado.
 
