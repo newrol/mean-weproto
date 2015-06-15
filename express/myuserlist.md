@@ -191,7 +191,8 @@ Con las correspondientes rutas web y sus respectivas llamadas al controlador.
     
         rest.get('/allUsers', function(req, content, callback){
     		userController.findAllUsers(function(users){
-    			callback(null, users.data.map(function(user){ return user}), { statusCode: users.status } );
+    			callback(null, users.data.map(function(user){ return user}),
+    			{ statusCode: users.status } );
     		});	
     	});
     };
@@ -228,6 +229,6 @@ myuserlist
   |*Diferentes ficheros git en caso de usarlo.
 ```
 
-Al finalizar esta implementación ya dispondríamos un servidor node.js plenamente funcional. En el siguiente capitulo se tratará la implementación de un cliente rest.
+Al finalizar esta implementación ya dispondríamos un servidor *Node.js* plenamente funcional. En el siguiente capitulo se tratará la implementación de un cliente rest.
 
 
