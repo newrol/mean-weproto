@@ -17,13 +17,13 @@ Podremos comprobar que en nuestro fichero *package.json* se ha añadido las siug
     }
 ```
 
-Y que ne *node.modules* se ha añadido el directorio mongoose con todos los valores. Ahora procederemos a crear nuestro esquema de datos.
+Y que ne *node.modules* se ha añadido el directorio *Mongoose* con todos los valores. Ahora procederemos a crear nuestro esquema de datos.
 
 Para ello en en directorio raíz añadiremos la siguiente ruta
 
     /app/db
     
-Y dentro del directorio db un fichero llamado *dbSchema.js*. Dentro de db schema crearemos nuestro esquema de datos de mongoose.
+Y dentro del directorio db un fichero llamado *dbSchema.js*. Dentro de db schema crearemos nuestro esquema de datos de *Mongoose*.
 
 ```javascript
     var mongoose   = require('mongoose');//Importamos Mongoose {http://mongoosejs.com}
@@ -38,7 +38,7 @@ Y dentro del directorio db un fichero llamado *dbSchema.js*. Dentro de db schema
     exports.userSchema = userSchema;
 ```
 
-De esta forma habremos creado nuestro modelo de mongoose. Pero para esta aplicación me gustaría añadir un modelo basado en este que aún nos abstraiga más de la nomenclatura de mongoose y sea más intuitivo a la hora de ser usado.
+De esta forma habremos creado nuestro modelo de *Mongoose*. Pero para esta aplicación me gustaría añadir un modelo basado en este que aún nos abstraiga más de la nomenclatura de *Mongoose* y sea más intuitivo a la hora de ser usado.
 
 Crearemos el directorio:
 
@@ -47,7 +47,7 @@ Crearemos el directorio:
 Y dentro de models el fichero *user.js*. Dentro de user crearemos el modelo que usaremos en nuestra lógica:
 
 ```javascript
-    var properties = require('properties').properties;	//Import properties file, and choose properties object
+    var properties = require('properties').properties;	//Import properties
 
     var mongoose   = require('mongoose');	
     var dbSchema   = require(properties.path + 'app/db/dbSchema')
@@ -110,7 +110,8 @@ Bajo el nombre de *userDao.js*, y contendrá el siguiente código:
 
 ```javascript
     var properties = require('properties').properties;      // Import properties file
-    var UserModel = require(properties.path + 'app/src/models/user').User;      // Import Oportunity model.
+   // Import Oportunity model.
+    var UserModel = require(properties.path + 'app/src/models/user').User;      
 
     /*
       Function userDao constructor.
