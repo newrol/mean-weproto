@@ -12,6 +12,7 @@
     
     * [Introduccion](javascript/introduccion.md)
     * [Caracteristicas](javascript/caracteristicas.md)
+    * [Json](javascript/json.md)
     * [Callbacks](javascript/callbacks.md)
     * [Objetos y herencia](javascript/objetos.md)
 
