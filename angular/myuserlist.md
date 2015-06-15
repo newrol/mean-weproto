@@ -219,17 +219,19 @@ Para termiar, dentro de body añadiremos la referencia a la tabla que más tarde
     
 Dentro de *controlPanelController.js* injectaremos las dependicias de las librerías dentro de la declaración del módulo:
 
+```javascript
     var app = angular.module('app', ['ngAnimate', 'ngTouch','ui.grid']);
+
+```
 
 Como se puede ver hemos añadido a la aplicación las dependecnias 'ngAnimate', 'ngTouch', y 'ui.grid'
 
 Después añadimos el controlador que realizará la petición al servidor.
 
 ```javascript
-app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridConstants){
+    app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridConstants){
     
-    
-app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridConstants){
+    app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridConstants){
 
     $http.get('http://localhost:3000/api/allUsers')
         .success(function(data){
