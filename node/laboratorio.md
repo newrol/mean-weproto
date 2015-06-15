@@ -1,7 +1,7 @@
 ##El laboratorio: myuserlist.
 
 
-Ya se ha profundizado lo  suficiente en el lenguaje javascript y su entorno de ejecución en servidor para comenzar a crear un proyecto que nos conduzca a ir poner en práctica todas las tecnologías aquí se describen.
+Ya se ha profundizado lo  suficiente en el lenguaje *Javascript* y su entorno de ejecución en servidor para comenzar a crear un proyecto que nos conduzca a ir poner en práctica todas las tecnologías aquí se describen.
 
 El código completo del proyecto se encuentra en github, en la siguiente URl:
 https://github.com/newrol/myuserlist
@@ -22,23 +22,18 @@ La funcionalidad que incluirá esta aplicación será muy sencilla. En ella most
 
 * **llamadas a la API rest desde el cliente para mostrar los datos.**
 
-* **Test unitarios a dao, controlador y Rest.**
-
-* **Control autenticación y sesiones para realizar las consultas.**
-
-
 Al final de cada explicación de una nueva funcionalidad se le añadirá el código correspondiente al nuestra aplicación.
 
-En este capítulo podremos iniciar la aplicación y enlazarla a grub, además de crear nuestro archivo properties para una mejor organización:
+En este capítulo podremos iniciar la aplicación y enlazarla a *Grunt*, además de crear nuestro archivo properties para una mejor organización:
 
 
-Primero nos dirigiremos con una terminal a la ruta de myuserlist y iniciaremos npm y rellenaremos el formulario con los parámetros correspondientes.
+Primero nos dirigiremos con una terminal a la ruta de myuserlist y iniciaremos *Npm* y rellenaremos el formulario con los parámetros correspondientes.
 
 	npm init
     
     npm install --save grunt
     
-Después crearemos el fichero properties.js con el pah de nuestra aplicación.
+Después crearemos el fichero *properties.js* con el pah de nuestra aplicación.
 
 	/*	
         Properties.js
@@ -48,7 +43,7 @@ Después crearemos el fichero properties.js con el pah de nuestra aplicación.
 		path : __dirname + ‘/’,
 	};
 
-Para terminar añadiremos el Gruntfile.js para gestinar la configuración de grunt.
+Para terminar añadiremos el Gruntfile.js para gestionar la configuración de *Grunt*.
 
 ```javascript
         /*	
@@ -61,7 +56,8 @@ module.exports  = function(grunt) {
    //Grunt task to set build the basic project configuration:
 	grunt.registerTask('build', 'My "default" task description.', function() {
 		//Create a symbolic link to set properties.js file as a general library:
-  		fs.symlinkSync(__dirname + '/properties.js', __dirname + '/node_modules/properties.js');
+  		fs.symlinkSync(__dirname + '/properties.js', __dirname +
+  		'/node_modules/properties.js');
 	});
 };
 ```
