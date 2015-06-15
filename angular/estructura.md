@@ -125,9 +125,8 @@ Una vez que se manejan las directivas son muy útiles para desarrollar códigos 
 Son usados para compartir objetos entre diferentes controladores y su nomenclatura es muy simple
 
 ```javascript
-    app.factory("descargasFactory", function(){
-        var descargasRealizadas = ["Manual de Javascript", "Manual de jQuery", "Manual de AngularJS"];
-
+    app.factory("fooFactory", function(){
+        
         var objetoParaCompartir = {
             fookey : 'fooValue',
             fookey1; 'fooValue1'
@@ -135,3 +134,9 @@ Son usados para compartir objetos entre diferentes controladores y su nomenclatu
         return objetoParaCompartir;
     });
 ```
+Después solo tendríamos que inyectar la factoría dentro como si de una dependedencia se tratara dentro de nuestro código. Para llamar a objetoParacompartir solo habríamos de llamar a la dependencia y al nombre del objeto:
+
+    fooFactory.objetoParaCompartir
+    
+    
+En este apartado se han tratado los principales elementos más usados de Ángular.js no obstante hay muchas más funcionalidades que podemos implementar en nuestra aplicación.
