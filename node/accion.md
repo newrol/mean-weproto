@@ -31,28 +31,39 @@ habremos lanzado un servidor web al que podremos llamar por ejemplo usando telne
  
 El cual nos devolverá el String:
 
-		hello world
+```javascript
+    'hello world'
+```
+
 Analicemos el código que hemos escrito:
 
-		var http = require('http');  
+```javascript
+    var http = require('http');  
+```
 
 Con la palabra reservada require importamos el módulo htt para
 poder usarlo en adelante simplemente utilizando su referencia http.
 	
-	http.createServer(function (request, response) {
-    		response.writeHead(200, {'Content-Type': 'text/plain'});
-    		response.end('Hello World\n');
-	})
+```javascript
+    http.createServer(function (request, response) {
+    	response.writeHead(200, {'Content-Type': 'text/plain'});
+    	response.end('Hello World\n');
+	});
+```
 
 Con http.createServer(...) llamamos a la función createServer del módulo http. dentro de la llamada “()” hemos declarado funcion(request, response) pues la función createServer devuelve dos callbaccks al ser ejecutada, y por lo tanto haciendo uso de la funcionalidad de javascript aprovechamos esas dos llamadas en el momento de declaración.
  
-	response.writeHead(200, {'Content-Type': 'text/plain'});
-    	response.end('Hello World\n');
+```javascript
+    response.writeHead(200, {'Content-Type': 'text/plain'});    	response.end('Hello World\n');
+
+```
 
 En el cuerpo de la función llamamos a los dos parámetros de la función que tienen las propiedades writehead y end cada uno.
 
+```javascript
 	.listen(8000);
-	
+```
+
 Llama al objeto anónimo que hemos creado  que se crea para poner el servidor a la escucha del puerto 8000.
 
     console.log('Server running at http://127.0.0.1:8000/');
