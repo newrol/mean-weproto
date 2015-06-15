@@ -1,4 +1,4 @@
-# prefacio
+# Prefacio
 
 
 ######  *"Si en los inicios no puedes alimentar a tu equipo con 2 pizzas, es que es demasiado grande" - Jeff Bezos de Amazon.*
@@ -10,5 +10,5 @@ Cuando se trata crear un nuevo software para el gran público o un determinado p
 
 En este Documento me centraré en el tercer requerimiento ágil. Y es que la tecnología usada para hacer posible nuestra idea ha de ser tratada como una herramienta y no como un elemento  burocrático y heterogéneo que nos ralentice en cada módulo o funcionalidad añadida. No quisiera generar mal entendidos; patrones de diseño, tests y demás elementos que aportan calidad a nuestro software conviven perfectamente con nuestros desarrollos ágiles. Me refiero a las tecnologías sobre las que se implementan todos estos modelos, paradigmas de desarrollo diferentes para cada entorno, frameworks absurdamente enormes para funcionalidades minúsculas, y librerías con configuraciones eternas  que impiden que la complejidad de nuestro software crezca acorde a los requerimientos del desarrollo. Y que lo que consiguen es que invirtamos más tiempo y nos focalicemos en dominar las herramientas que en desarrollar nuestro modelo.
 
-Trataré de abordar todos los elementos que componen una aplicación web moderna desde persistencia hasta la interación con el usuario. Y aportar para cada uno de los diferentes bloques una tecnología particular, que tratada en conjunto como un ente global nos aporte como resultado una aplicación compacta, modular y dotada del dinamismo requerido por un buen prototipo. 
+Trataré de abordar todos los elementos que componen la logica de una aplicación web moderna desde persistencia hasta la interación con el usuario. Y aportar para cada uno de los diferentes bloques una tecnología particular, que tratada en conjunto como un ente global nos aporte como resultado una aplicación compacta, modular y dotada del dinamismo requerido por un buen prototipo. 
 
