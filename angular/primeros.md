@@ -1,6 +1,6 @@
 ##Primeros pasos con Angular.js
 
-Lo primero que hemos dehacer es decarganos la versión .min(sin espacios para ahorrar bytes de transferencia) y ponerla a disposición del código web dentro de nuestro servidor.
+Lo primero que hemos deshacer es descarganos la versión .min(sin espacios para ahorrar bytes de transferencia) y ponerla a disposición del código web dentro de nuestro servidor.
 
 ```html
     <!--ejemplo de import de angular.js en nuestro html -->
@@ -49,10 +49,10 @@ muestro un ejemplo simple pero interactivo:
     </html>
 ```
 
-En el anterior ejemplo pdremos observar como el saludo cambia en tiempo real respecto al nombre que escribamos en el input:
+En el anterior ejemplo podremos observar como el saludo cambia en tiempo real respecto al nombre que escribamos en el input:
 
 ![](pepe.png)
 
-Tras estas dos breves aplicaciones se mostrará la sintaxis de Angular.
+Tras estas dos breves aplicaciones se mostrará la sintaxis de *Angular.js*.
 
 
