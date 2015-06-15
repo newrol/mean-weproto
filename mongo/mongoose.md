@@ -90,7 +90,6 @@ Al ejecutar la función *save()* se nos devolverá un primer callback en caso de
 Borremos value1:
 
 ```javascript
-
     value1.remove(function(status){
         console.log(status);
     });
