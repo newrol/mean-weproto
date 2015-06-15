@@ -1,6 +1,6 @@
 ##Shell de mongoDB
 
-Lo primero para poder acceder a mongodb es tener nuestra instancia corriendo en el sistema, para ello hemos de tener el servicio mongd activo.
+Lo primero para poder acceder a *MongoDB* es tener nuestra instancia corriendo en el sistema, para ello hemos de tener el servicio *MongoDB* activo.
 
 para acceder a una instancia local solo hemos de usar el comando:
 
@@ -26,10 +26,10 @@ Algunos comandos de administración útiles serían:
 	
 	>show collections dentro de una bbdd lista las colecciones disponibles.
 
-La consola de mongoDB puede iniciarse ejecutando un script pasado como parámetro cuando se llama al comando:
+La consola de *mongoDB* puede iniciarse ejecutando un script pasado como parámetro cuando se llama al comando:
 
 	$mongo scriptname.js
 
-Desde dentro de la consola de mongoDB podríamos llamar al mismo script usando:
+Desde dentro de la consola de *MongoDB* podríamos llamar al mismo script usando:
 
 	>load(“scriptName.js”)
