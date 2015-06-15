@@ -67,7 +67,10 @@ realizarla.  Estos condicionales son:
 
 Ejemplo:
 
+```javascript
 		>db.fooCollection.find({"name" : {"$eq" : "antonia"}})
+
+```
 
 Devolverá el cursor con el valor antonia:
 
