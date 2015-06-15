@@ -17,4 +17,4 @@ Un resumen de las principales propiedades de *MongoDB*:
 
 * *MongoDB* incluye en su instalación base una terminal de *Javascript* para su administración y manipulación.
 
-* Los datos que *MongoDB* almacena en disco se serializan en un formato llamado *Bson*, que prácticamente es lo mismo que un formato json, por lo tanto trabajaremos directamente con los mismo objetos entre *Javascript* y *MongoDB*.
+* Los datos que *MongoDB* almacena en disco se serializan en un formato llamado *Bson*, que prácticamente es lo mismo que un formato *Json*, por lo tanto trabajaremos directamente con los mismo objetos entre *Javascript* y *MongoDB*.
