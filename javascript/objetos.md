@@ -1,6 +1,6 @@
-Objetos y herencia.
+##Objetos y herencia.
 
-En javascript todos los objetos son mapas (diccionarios) en forma de clave (String) : valor. una línea clave:valor es considerada una propiedad.
+En *Javascript* todos los objetos son mapas (diccionarios) en forma de clave (String) : valor. una línea clave:valor es considerada una propiedad.
 
 ejemplo de objeto en javascript:
 
@@ -21,8 +21,10 @@ ejemplo de objeto en javascript:
 
 
 Para añadir una propiedad al objeto mostrado anteriormente solo hemos de escribir:
-	
-	fooPerson.height = 1,76;
+
+```javascript
+    fooPerson.height = 1,76;
+```
 
 Y ya nuestra fooPerson tendrá el valor height dentro de su lista de propiedades.
 Para acceder a cualquiera de estas solo hemos de llamarla de la siguiente forma:
