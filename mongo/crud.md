@@ -106,8 +106,10 @@ Para actualizar un documento primero hemos de lanzar la consulta que seleccione 
 
 Como podemos observar primero realizamos la consulta, después introducimos todos los valores que modificaremos y para terminar añadimos *upset :  true* para indicar que los cambios queden escritos, si no añadimos este único campo se nos imprimirá por pantalla una simulación de lo que ocurriría al aplicar el *update*
 
+```javscript
     db.fooCollection.update({"name" : "pepe"},{"name" : "pepe", "apellido" : "nuevo"},{upsert : true})
 
+```
 
 Como se ha encontrado la condición de la consulta la consola nos devolverá la siguiente salida:
 
