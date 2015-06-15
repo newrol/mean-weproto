@@ -87,9 +87,12 @@ un mismo documento de mongoDB no puede contener las mismas claves.
 Cuando creamos un nuevo documento automáticamente se crea también el campo _id
 Este campo es , para mongoDB, la clave principal de el documento. este campo está formado por 12 bytes que representados como una string nos muestran 24 dígitos hexadecimales, 2 dígitos por cada byte que almacenamos. Esto hace que mostrado por pantalla parezca una string pesada, pero en realidad es algo muy liviano generado a partir de la siguiente lógica.
 
+```javascript
 	0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
 	[                ][       ][      ][           ]
 	  timestamp        machine  pid      increment
+    
+```
 
 Esta es la las de las claves de la escalabilidad de mongodb,  pues los id que generan son únicos para cada documento estén en la ejecución que se encuentren.
 
