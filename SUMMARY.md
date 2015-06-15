@@ -66,6 +66,11 @@
         * Añadir listado de usuarios
 
 * [Bibliografia](bibliografia.md)
+    * Libros
+    * Podcasts
+    * Recursos interactivos en línea
+    * Recursos oficiales en línea
+    * Blog y otros
     
 
 
