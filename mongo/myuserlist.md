@@ -4,7 +4,7 @@ En este capitulo procederemos a añadir la capa de persistencia de datos a nuest
 
 Lo primero que hay que hacer es instalar (en la web está la info), y comprobar que el servicio de *MongoDB* está en ejecución.
 
-Después hay que instalar el driver de mongoose:
+Después hay que instalar el driver de *Mongoose*:
 
 
     npm install --save mongoose
@@ -26,7 +26,7 @@ Para ello en en directorio raíz añadiremos la siguiente ruta
 Y dentro del directorio db un fichero llamado *dbSchema.js*. Dentro de db schema crearemos nuestro esquema de datos de mongoose.
 
 ```javascript
-    var mongoose   = require('mongoose');				//Import mongoose library {http://mongoosejs.com}
+    var mongoose   = require('mongoose');//Importamos mongoose library {http://mongoosejs.com}
 
     var userSchema = new mongoose.Schema({
         nick  : { type: String, required: true, unique: true },
