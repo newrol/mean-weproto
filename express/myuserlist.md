@@ -111,7 +111,8 @@ Y dentro de él *userController.js* con el siguiente código:
     			//if the result is an instance of userMongoose Schema it was created:
     			//If user has been created return correct value 201 and the user.
     			if(data instanceof UserModel) callback({status : 201, data : data}); 
-    			else if (data.code === 11000) callback({status : 409, data: 'this user already exist'});
+    			else if (data.code === 11000) callback(
+    			{status : 409, data: 'this user already exist'});
     			else{
     				console.log('error', " UserController: Could not Create user:" + data);
     				callback({status: 500, data: data});
