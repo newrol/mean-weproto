@@ -96,7 +96,8 @@ Y dentro de él *userController.js* con el siguiente código:
     
     /*
     	UserController prototype
-    	Callbacks status code based on http status codes http://en.wikipedia.org/wiki/List_of_HTTP_status_codes.
+    	Callbacks status code based on http status codes 
+    	http://en.wikipedia.org/wiki/List_of_HTTP_status_codes.
     */
     function UserController(){
     
@@ -108,7 +109,8 @@ Y dentro de él *userController.js* con el siguiente código:
     	this.createUser = function(user, callback){
     		userDao.create(user, function(data){
     			//if the result is an instance of userMongoose Schema it was created:
-    			if(data instanceof UserModel) callback({status : 201, data : data}); //If user has been created return correct value 201 and the user.
+    			//If user has been created return correct value 201 and the user.
+    			if(data instanceof UserModel) callback({status : 201, data : data}); 
     			else if (data.code === 11000) callback({status : 409, data: 'this user already exist'});
     			else{
     				console.log('error', " UserController: Could not Create user:" + data);
