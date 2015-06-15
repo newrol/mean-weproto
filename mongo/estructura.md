@@ -43,14 +43,15 @@ dependiendo del valor de cada clave su tipo de dato será diferente, en mongoDB 
 
 ```javascript
     { “foo” : new Date() }
-
 ```
 
-
 * **array:** Guarda una lista de valores
-		
-        { “foo” : [“x”, “y” , “z”] }
 
+```javascript
+    { “foo” : [“x”, “y” , “z”] }
+
+```
+		
 * **documentos embebidos:** Un documento puede poseer otro documento como propiedad:
 
 		{ “foo” : {“foovar” : “var}}
