@@ -93,4 +93,17 @@ Ahora cuando se cargue la web, al llegar al body se cargará el controlador y se
 
 Las directivas nos permiten hacer nuestra aplicación más modular aún. Su lógica está basada en declarar un bloque de la aplicación que esté vinculado a un código html y a un controlador especifico.
 
+Su código estaría basado en :
+
+```javascript
+        app.directive('nombre de la directiva', ['$http', function($scope){
+    	// Runs during compile
+    	return {
+    		restrict: 'E',
+    		templateUrl: '/views/create-user.html',
+    		controller: function($scope, $http){
+
+
+
+```
 
