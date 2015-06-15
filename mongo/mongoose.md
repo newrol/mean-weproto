@@ -73,10 +73,8 @@ Para crear nuevas instancias en base a value usaremos el *new*
 Ahora tenemos dos valores dieferentes con sus propiedades. Ahora podremos ponerle titulo y valor a nuestros objetos:
 
 ```javascript
-
     value1.title = "titulo1";
     value2.title = "titulo2";
-
 ```
 El siguiente paso es guardar nuestros valores en la base de datos. En el anterior capitulo mostramos como trabaja mongoDB como su shell base y usando las funciones allí mostradas podríamos hacer nuestras consultas si estubieramos usando el driver básico. Pero como mongoose se nos simplifica mucho esta tarea:
 
