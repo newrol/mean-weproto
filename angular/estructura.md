@@ -1,10 +1,10 @@
-#Estructura de Ángular.js
+#Estructura de Angular.js
 
 En este capitulo trataremos la sintaxis y lógica que sigue angular para generar las web dinámicas. 
 
 ###Módulos
 
-Es el primer concepto a introducir. El módulo es la forma que tiene *Ángular.js* de enpaquetar el código relacionado entre sí baje el mismo nombre. El analogo en java podría ser una clase. El módulo está compuesto de dos partes:
+Es el primer concepto a introducir. El módulo es la forma que tiene *Angular.js* de empaquetar el código relacionado entre si baje el mismo nombre. El análogo en java podría ser una clase. El módulo está compuesto de dos partes:
 
 * Controladores, servicios, factorias y directivas. Que son las funciones y el código que recorrerá todo el módulo.
 
@@ -29,7 +29,7 @@ Si únicamente quisiseramos llamar a un módulo que está en otro fichero simple
     angular.module.('module-name');
 ```
 
-La línea anterior informa a *Ángular.js* de que hay un módulo que se llama module-name en alguna parte del DOM y que puede ser utilizado en este fichero
+La línea anterior informa a *Angular.js* de que hay un módulo que se llama module-name en alguna parte del DOM y que puede ser utilizado en este fichero
 
 
 Para vincular un módulo a nuestro fichero html usamos dentro de la etiqueta que englobará el código html dominio:
@@ -55,7 +55,7 @@ Más elegante, sobre todo para aplicaciones de gran embergadura.
 
 ###Controlador
 
-Ahora que tenemos el envoltorio llenemoslo con las diferentes funciones que deseamos. de ello se encargará cada uno de nuestros controladores. Sus tareas son:
+Ahora que tenemos el envoltorio llenémoslo con las diferentes funciones que deseamos. de ello se encargará cada uno de nuestros controladores. Sus tareas son:
 
 * recolectar los datos del servidor para servirlos en la vista.
 
