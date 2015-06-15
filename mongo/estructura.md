@@ -55,12 +55,13 @@ dependiendo del valor de cada clave su tipo de dato será diferente, en mongoDB 
 
 ```javascript
     { “foo” : {“foovar” : “var}}
-
 ```
 
 * **Id de documento:** usado sobre todo para relaciones diferentes documentos entre si
 	 	
-		{ “foo” : objectId() }
+```javascript
+    { “foo” : objectId() }
+```
 
 Existen los datos binarios, código y expresiones regulares de javascript pero estos son menos usados.
 
