@@ -26,7 +26,7 @@ Para ello en en directorio raíz añadiremos la siguiente ruta
 Y dentro del directorio db un fichero llamado *dbSchema.js*. Dentro de db schema crearemos nuestro esquema de datos de mongoose.
 
 ```javascript
-    var mongoose   = require('mongoose');//Importamos mongoose library {http://mongoosejs.com}
+    var mongoose   = require('mongoose');//Importamos Mongoose {http://mongoosejs.com}
 
     var userSchema = new mongoose.Schema({
         nick  : { type: String, required: true, unique: true },
