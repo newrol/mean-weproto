@@ -89,7 +89,7 @@ Con nuestro servidor Configurado crearemos el controlador que unirá las consult
 Y dentro de él *userController.js* con el siguiente código:
 
 ```javascript
-    var properties = require('properties').properties;							//Import properties file
+    var properties = require('properties').properties;	//Import properties file
     	 	
     var UserModel  	   =  require(properties.path + 'app/models/user').User; 
     var UserDaoModel    = require(properties.path + 'app/dao/userDao').UserDao	
