@@ -8,11 +8,11 @@ Lo primero que hemos deshacer es descarganos la versión .min(sin espacios para 
     <script type="text/javascript" src="angular.min.js"></script>
 ```
 
-Ángular.js requiere de jquery para poder funcionar por lo tanto hemos de descargarlo y enlazarlo en la web de la misma forma que se ha hecho en el código anterior.
+*Angular.js* requiere de *Jquery* para poder funcionar por lo tanto hemos de descargarlo y enlazarlo en la web de la misma forma que se ha hecho en el código anterior.
 
-de esta forma ya podríamos hacer uso de las funcionalidades de Angular.js. que como en todo framework web consiste en realizar una serie de operaciones y en caso de querer interactuar con el usuario se genera código html dinánico que se incrusta en la web que se está mostrando. 
+de esta forma ya podríamos hacer uso de las funcionalidades de *Angular.js*. que como en todo framework web consiste en realizar una serie de operaciones y en caso de querer interactuar con el usuario se genera código html dinánico que se incrusta en la web que se está mostrando. 
 
-Para situar el lugar donde queremos que Ángular.js genere el código se usa *"" {{ valores }}*, el "juego" de las dos llaves es muy característico de  *handlebars*.
+Para situar el lugar donde queremos que *Angular.js* genere el código se usa *"" {{ valores }}*, el "juego" de las dos llaves es muy característico de  *handlebars*.
 
 Creemos una web con ángular muy simple:
 
@@ -30,7 +30,7 @@ Creemos una web con ángular muy simple:
 ```
 
 Lo que este ejemplo nos mostrará por pantalla es *suma 2* como elemento de título.
-Podemos observar dos elementos que no son caracteristicos de html: *ng-app* que es la directiva principal y la que enjaula todo el código consencutivo bajo Ángular, y {{ 1 +  1 }} que sigue la nomenclatura de ángular para designar elementos que generaran resultados dinámicos.
+Podemos observar dos elementos que no son caracteristicos de html: *ng-app* que es la directiva principal y la que enjaula todo el código consencutivo bajo *Angular.js*, y {{ 1 +  1 }} que sigue la nomenclatura de ángular para designar elementos que generaran resultados dinámicos.
 
 
 muestro un ejemplo simple pero interactivo:
