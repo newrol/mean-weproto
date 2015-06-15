@@ -97,7 +97,7 @@ Y dentro de models el fichero *user.js*. Dentro de user crearemos el modelo que 
 ```
 
 
-Al ir añadiendo métodos al prototype podremos llamarlos cuando creemos nuestro objeto a través de sus getters y sus setters (ver capitulo de herencia en javascript).
+Al ir añadiendo métodos al prototype podremos llamarlos cuando creemos nuestro objeto a través de sus getters y sus setters (ver capitulo de herencia en *Javascript*).
 
 
 Con nuestro modelo creado nos quedaría crear nuestro script "CRUD" que alojará nuestras consultas.
