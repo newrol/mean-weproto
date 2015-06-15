@@ -1,10 +1,12 @@
 ##Primeros pasos con Express.js
 
-El primer paso para usar *Express.js* es añadirlo al proyecto actual de node.js para ello usaremos npm:
+El primer paso para usar *Express.js* es añadirlo al proyecto actual de *Node.js* para ello usaremos *Npm*:
 
     npm insstall --save express
 
 Luego crearemos un sript sencillo con el siguiente código:
+
+```javascript
 
     var express = require('express');
     
@@ -32,6 +34,8 @@ Luego crearemos un sript sencillo con el siguiente código:
      console.log( 'Express started on http://localhost:' +
      app.get('port') + '; press Ctrl-C to terminate.' );
     });
+
+```
 
 Con este código pondriamos a nuestra disposición una instancia de express.
 
