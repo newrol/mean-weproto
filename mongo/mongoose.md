@@ -56,12 +56,14 @@ El siguiente paso es crear el esquema de datos que utilizaremos:
         title  : { type: String, required: true, unique: true },
         value :  { type :String, required:true },
     });
-
 ```
 Con nuestro esquema creado solo tendremos que crear un objeto envoltorio del mismo:
-
+ 
+```javascript
     var Value = mongoose.model('value', valueSchema); 
-    
+
+```
+
 Para crear nuevas instancias en base a value usaremos el *new*
 
     var value1 = new Value;
