@@ -89,9 +89,13 @@ Al ejecutar la función *save()* se nos devolverá un primer callback en caso de
 
 Borremos value1:
 
+```javascript
+
     value1.remove(function(status){
         console.log(status);
     });
+```
+
   
 en caso de desear actualizar con nuevos valores solo tendríamos que modificiar el parametro del objeto existente y llamar a su función update.
   
