@@ -208,17 +208,19 @@ Desde donde añadiremos el fichero css y el fichero javascript cada uno a los re
 Una vez localizados los añadiremos:
 
 
+```html
+
      <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid-unstable.css"
      type="text/css">
      
      <script src="http://ui-grid.info/release/ui-grid-unstable.js"></script>
      
+```
+
 Para termiar, dentro de body añadiremos la referencia a la tabla que más tarde definiremos en el controlador:
 
 ```html
-
     <div id="userGrid" ui-grid="gridOptions" class="grid"></div>
-    
 ```
 
 Dentro de *controlPanelController.js* injectaremos las dependicias de las librerías dentro de la declaración del módulo:
