@@ -225,7 +225,7 @@ Como se puede ver hemos añadido a la aplicación las dependecnias 'ngAnimate', 
 
 Después añadimos el controlador que realizará la petición al servidor.
 
-
+```javascript
 app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridConstants){
     
     
@@ -236,7 +236,9 @@ app.controller('MainCtrl', ['$scope', '$http', function($scope, $http, uiGridCon
  	    $scope.userData = data;
  	    });  
     }]);
-    
+
+```
+
 Y con este último añadido ya tendríamos la lista de todos los usuarios y la posibilidad de crearlos dentro de nuesta app de ejemplo.
 
 
