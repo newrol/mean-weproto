@@ -53,8 +53,6 @@ Enhanced Productivity with Structured Web Apps - Shyam Seshadri, Brad Green
 
 * nodehispano
 
-* 
-
 * carlosazaustre.es
 
 * stack overflow
