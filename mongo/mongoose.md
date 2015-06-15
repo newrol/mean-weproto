@@ -81,11 +81,9 @@ El siguiente paso es guardar nuestros valores en la base de datos. En el anterio
 Primero guardaremos value1:
 
 ```javascript
-
     value1.save(function(err){
       if(err) console.log('No se ha podido guardar este valor');
     });
-
 ```
 Al ejecutar la función *save()* se nos devolverá un primer callback en caso de error y un segundo con objeto guardado y su correspondiente _id asignado, en este caso solo queremos saber cuando se ha producido un error.
 
