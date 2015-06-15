@@ -6,8 +6,11 @@ Dentro de una base de datos llamada datos fooDatabase crearemos una serie de col
 
 Insertaremos dos  nuevos documento dentro de la coleción fooCollection.
 
+```javascript
 		> db.fooCollection.insert({"name" : "antonia", "apellido" : "garcia"})
 		>db.fooCollection.insert({"name" : "pepe", "apellido" : "Martinez"})
+
+```
 
 
 Al insertar el primer documento se creará la colección fooCollection y se insertará e documento, al insertar el segundo documento como la colección ya existe, simplemente se creará el nuevo registro.	
