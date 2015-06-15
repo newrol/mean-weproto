@@ -88,7 +88,8 @@ El código que incluiremos es el siguiente:
     <button href="#" class="btn btn-lg btn-primary"
        id="filter-btn"
        data-toggle="modal"
-       data-target="#basicModal">Nuevo Usuario<span class="badge" id="filterCount"></span></button>
+       data-target="#basicModal">Nuevo Usuario<span class="badge" id="filterCount">
+       </span></button>
     
        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog"
        aria-labelledby="basicModal" aria-hidden="true">
