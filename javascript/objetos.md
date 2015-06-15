@@ -26,9 +26,9 @@ Para añadir una propiedad al objeto mostrado anteriormente solo hemos de escrib
     fooPerson.height = 1,76;
 ```
 
-Y ya nuestra fooPerson tendrá el valor height dentro de su lista de propiedades.
+Nuestra fooPerson tendrá el valor height dentro de su lista de propiedades.
 Para acceder a cualquiera de estas solo hemos de llamarla de la siguiente forma:
-nombreObjeto.propiedad, el valor de dicha propiedad nos será devuelto.
+*nombreObjeto.propiedad*, el valor de dicha propiedad nos será devuelto.
 
 
 Para crear un constructor de objeto simplemente hemos de declarar una función con una serie de valores predeterminados, y llamarla como valor de una nueva variable haciendo uso new:
