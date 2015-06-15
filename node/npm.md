@@ -61,14 +61,13 @@ con nuestro proyecto iniciado podemos proceder a añadir las librerías que dese
 
 Para instalar una nueva libreria solo hemos de ejecutar:
 	
-```javascript
+	
     /*
 		npm install <nombre de la libreria>
 	*/
 	
 	npm install moment
-```
-	
+
 Con esta ejecución hemos añadido a nuestro proyecto la librería moment.js que se encarga de facilitarnos el manejo de fecha | hora dentro de nuestra aplicación.
 
 al haber añadido nuestra primera librería a la aplicación se nos ha generado el directorio node_modules. El cual almacenará todas las librerías requeridas de nuestra aplicación. Si usamos git conviene añadir este directorio a .gitignore pues en grandes aplicaciones puede pesar mucho.
