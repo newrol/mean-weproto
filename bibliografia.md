@@ -47,7 +47,20 @@ Enhanced Productivity with Structured Web Apps - Shyam Seshadri, Brad Green
 
 * Documentación oficial de *npm*
 
-##Blogs
+##Blogs y otros
+
+* frontendlabs.io
+
+* nodehispano
+
+* carlosazaustre.es
+
+* stack overflow
+
+* wikipedia
+
+
+
 
 
 
