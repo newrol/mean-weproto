@@ -119,5 +119,5 @@ En cambio para realizar una consulta no usaremos un objeto creado, si no que uti
 ```
 En ese caso se nos devolverá un objeto con los valores de value1, si la consulta devulveria más de uno lo que se nos devolvería sería una colección de todos los valores encontrados.
 
-Como podemos ver mongoose facilita mucho la interación con la base de datos y abstrae nuestro esquema de datos de las diferencias entre las dos plataformas. Esta funcionalidad hace de mongoose + node.js un planteamiento perfecto a la hora de prototipar apliaciones que requieran una conexión a  una base de datos.
+Como podemos ver *Mongoose* facilita mucho la interación con la base de datos y abstrae nuestro esquema de datos de las diferencias entre las dos plataformas. Esta funcionalidad hace de *Mongoose* + *Node.js* un planteamiento perfecto a la hora de prototipar aplicaciones que requieran una conexión a  una base de datos.
     
