@@ -1,6 +1,6 @@
 ##Características 
 
-Javascript es peculiar desde su aprendizaje; en muchos lenguajes se aprenden  carácteristicas del lenguaje desde el primer momento. En javascript se aprenden patrones. Esto nos conduce a hacer un entorno de trabajo dividido en programación orientada a objetos y funcional.
+*Javascript* es peculiar desde su aprendizaje; en muchos lenguajes se aprenden  carácteristicas del lenguaje desde el primer momento. En *Javascript* se aprenden patrones. Esto nos conduce a hacer un entorno de trabajo dividido en programación orientada a objetos y funcional.
 
 A continuación muestro ciertas peculiaridades del lenguaje. 
 
@@ -32,5 +32,5 @@ A continuación muestro ciertas peculiaridades del lenguaje.
 
 * Se pueden declarar funciones dentro de otras.
 
-* typeof  se utiliza para saber de qué clase es un primitivo, instanceof para saberlo de un objeto
+* *typeof*  se utiliza para saber de qué clase es un primitivo, *instanceof* para saberlo de un objeto
 
