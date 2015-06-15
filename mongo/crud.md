@@ -87,10 +87,12 @@ varios condicionales pueden ser aplicados dentro del mismo find respentando la s
     
 ```
 
-
 Podemos usar el operador $or Para lanzar consultas enlazadas:
 
+```javascript
     db.fooCollection.find({"$or" : [{"name" : "pepe"},{"name" : "antonia"}]})
+
+```
 
 
 ###Actualizar 
