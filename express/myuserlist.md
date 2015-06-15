@@ -169,7 +169,8 @@ Con las correspondientes rutas web y sus respectivas llamadas al controlador.
     var  rest = require(properties.path + 'api/index').rest;
     
     var UserModel           = require(properties.path + 'app/models/user').User;
-    var UserControllerModel = require(properties.path + 'app/controllers/userController').UserController;
+    var UserControllerModel = require(properties.path +
+    'app/controllers/userController').UserController;
     
     var userController = new UserControllerModel();
     
