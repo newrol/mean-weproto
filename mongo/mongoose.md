@@ -95,13 +95,15 @@ Borremos value1:
     });
 ```
 
-  
 en caso de desear actualizar con nuevos valores solo tendríamos que modificiar el parametro del objeto existente y llamar a su función update.
-  
+
+```javascript
     this.update = function(opportunity, callback){
         opportunity.update(callback);
     };
-    
+
+```
+  
 En cambio para realizar una consulta no usaremos un objeto creado, si no que utilizaremos el objeto envoltorio.
 
     //Primero construimos la query sobre el modelo.
