@@ -81,8 +81,12 @@ Devolverá el cursor con el valor antonia:
 
 varios condicionales pueden ser aplicados dentro del mismo find respentando la siguiente nomenclatura:
 
+```javascript
+
     db.CollectionName.find({key : {$conditional 1 : “value”, $contdiitonal2 : “value” …}})
-	
+    
+```
+
 
 Podemos usar el operador $or Para lanzar consultas enlazadas:
 
