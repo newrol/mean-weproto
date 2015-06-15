@@ -96,14 +96,50 @@ Las directivas nos permiten hacer nuestra aplicación más modular aún. Su lóg
 Su código estaría basado en :
 
 ```javascript
-        app.directive('nombre de la directiva', ['$http', function($scope){
-    	// Runs during compile
-    	return {
-    		restrict: 'E',
-    		templateUrl: '/views/create-user.html',
-    		controller: function($scope, $http){
+        app.directive('nombreDirectiva', ['$librerias a importar', function(){
+    	    return {
+    		    restrict: 'E',
+    		    templateUrl: '/views/create-user.html',
+    		    controller: function(){
+                //Datos del controlador 
+            }
+        }]);
+```
+*  **restrict** se encarga de decir el tipo de dato, en este caso es un tag html y será el que se suela usar.
+
+* **templateURL** es la dirección del código html que se renderizará al llamar a la directiva desde la vista html.
+
+* **controller** Haces las funciones de controlador principal dentro del template definido.
+
+Para instanciar la directiva dentro de la vista usariamos el siguiente tag:
+
+    <nombre-directiva></nombre-directiva>
+    
+Notese que en la vista se convierte la nomenclatura camelCase por - antes de donde iría la letra mayuscula.
+
+Una vez que se manejan las directivas son muy útiles para desarrollar códigos faciles de mantener.
 
 
+###Factorias
+
+Son usados para compartir objetos entre diferentes controladores y su nomenclatura es muy simple
+
+º.factory("descargasFactory", function(){
+    var descargasRealizadas = ["Manual de Javascript", "Manual de jQuery", "Manual de AngularJS"];
+
+```javascript
+        var interfaz = {
+        nombre: "Manolo",
+        getDescargas: function(){
+            return descargasRealizadas;
+        },
+        nuevaDescarga: function(descarga){
+            descargasRealizadas.push(descarga);
+        }
+    }
+    return interfaz;
+})
 
 ```
 
+  
