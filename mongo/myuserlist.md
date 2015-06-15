@@ -2,7 +2,7 @@
 
 En este capitulo procederemos a añadir la capa de persistencia de datos a nuestra aplicación laboratorio.
 
-Lo primero que hay que hacer es instalar (en la web está la info), y comprobar que el servicio de mongoDB está en ejecución.
+Lo primero que hay que hacer es instalar (en la web está la info), y comprobar que el servicio de *MongoDB* está en ejecución.
 
 Después hay que instalar el driver de mongoose:
 
