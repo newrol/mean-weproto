@@ -37,7 +37,7 @@ Luego crearemos un sript sencillo con el siguiente código:
 
 ```
 
-Con este código pondriamos a nuestra disposición una instancia de express.
+Con este código pondriamos a nuestra disposición una instancia de *Express.js*.
 
 Si quiseramos añadir rutas a la escucha solo tendríamos que usar la función *get()*:
 
@@ -53,7 +53,7 @@ Si quiseramos añadir rutas a la escucha solo tendríamos que usar la función *
     }); 
 ```
 
-Estas dos rutas hay que añadirlas antes de las funciones de error 400 y error 500 pues nuestro servidor de express comenzará a buscar desde la primera hasta la última, si cuando recibe una petición su primer función a ejecutar es la 400 supondrá que no hay otras rutas en la aplicación y lanzará la respuesta de que no se ha encontrado la ruta seleccionada.
+Estas dos rutas hay que añadirlas antes de las funciones de error 400 y error 500 pues nuestro servidor de *Express.js* comenzará a buscar desde la primera hasta la última, si cuando recibe una petición su primer función a ejecutar es la 400 supondrá que no hay otras rutas en la aplicación y lanzará la respuesta de que no se ha encontrado la ruta seleccionada.
 
 En este caso estamos añadiendo la ruta principal y la típica página de *about*. cabe decir que estamos enviando los textos planos descriptivos de cada aplicación. *'página principal'* y *página de despcripción*.
 
@@ -76,7 +76,7 @@ Si quisieramos vincular la ruta de cada petición a un fichero web con código h
 
 de esta forma solo tendríamos que moldear nuestros ficheros html a placer para mostrar cada una de las páginas.
 
-Express está preparado para mostrar webs dinámicas, para ello utiliza los renders jade o handlebars. Yo personalmente me decanto por el segundo, pues tiene una lógica muy parecida a jekill en ruby on rails. Esta clase de render html son muy útiles a la hora de generar blogs simples o demás contenido dinámico que vaya a generar código html en tiempo de respuesta a petición. Nosotros en este caso usaremos *angular.js* para los contenidos dinámicos de nuestra web, por lo que solo tendremos que enlazar el contenido estático y servirnos de express para generar la *API REST* responderá a nuestras peticiones
+*Express.js* está preparado para mostrar webs dinámicas, para ello utiliza los renders jade o handlebars. Yo personalmente me decanto por el segundo, pues tiene una lógica muy parecida a *Jekill* en *Ruby On Rails*. Esta clase de render html son muy útiles a la hora de generar blogs simples o demás contenido dinámico que vaya a generar código html en tiempo de respuesta a petición. Nosotros en este caso usaremos *angular.js* para los contenidos dinámicos de nuestra web, por lo que solo tendremos que enlazar el contenido estático y servirnos de *Express.js* para generar la *API REST* responderá a nuestras peticiones
 
 
 
