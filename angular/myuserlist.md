@@ -215,13 +215,16 @@ Una vez localizados los añadiremos:
      
 Para termiar, dentro de body añadiremos la referencia a la tabla que más tarde definiremos en el controlador:
 
+```html
+
     <div id="userGrid" ui-grid="gridOptions" class="grid"></div>
     
+```
+
 Dentro de *controlPanelController.js* injectaremos las dependicias de las librerías dentro de la declaración del módulo:
 
 ```javascript
     var app = angular.module('app', ['ngAnimate', 'ngTouch','ui.grid']);
-
 ```
 
 Como se puede ver hemos añadido a la aplicación las dependecnias 'ngAnimate', 'ngTouch', y 'ui.grid'
