@@ -49,6 +49,7 @@ Lo siguiente será crear la vista web que hará las funciones de panel de contol
 ###Añadir usuario
 La primera funcionalidad que le vamos a añadir al cliente es la de añadir nuevos clientes. Para ello usaremos una directiva que incluirá el controlador con la llamada al método post de nuestro server.
 
+```javascript
     app.directive('createUser', ['$http', function($scope){
     	// Runs during compile
     	return {
@@ -75,6 +76,7 @@ La primera funcionalidad que le vamos a añadir al cliente es la de añadir nuev
         };
     }]);
 
+```
 
 
 
