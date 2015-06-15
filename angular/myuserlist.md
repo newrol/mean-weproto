@@ -75,10 +75,7 @@ La primera funcionalidad que le vamos a añadir al cliente es la de añadir nuev
     		}
         };
     }]);
-
 ```
-
-
 
 Después crearemos la vista del componente para crear un nuevo usuario. Lo crearemos bajo el nombre de *create-user.html* en el directorio:
 
@@ -93,7 +90,8 @@ El código que incluiremos es el siguiente:
        data-toggle="modal"
        data-target="#basicModal">Nuevo Usuario<span class="badge" id="filterCount"></span></button>
     
-       <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+       <div class="modal fade" id="basicModal" tabindex="-1" role="dialog"
+       aria-labelledby="basicModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -104,22 +102,26 @@ El código que incluiremos es el siguiente:
                 	<form ng-submit="submit()">
                 	<div class="form-group">
         				<label>Nick</label>
-        				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="introduce el nick"
+        				<input type="text" class="form-control" id="exampleInputEmail1"
+        				placeholder="introduce el nick"
         				data-ng-model="user.nick" required>
       				</div>
       				<div class="form-group">
         				<label>Nombre</label>
-        				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="introduce el nombre"
+        				<input type="text" class="form-control" id="exampleInputEmail1"
+        				placeholder="introduce el nombre"
         				data-ng-model="user.name">
       				</div>
       				<div class="form-group">
         				<label>Apellido</label>
-        				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="introducir el apellido"
+        				<input type="text" class="form-control" id="exampleInputEmail1"
+        				placeholder="introducir el apellido"
         				data-ng-model="user.surname" required>
       				</div>
       				<div class="form-group">
         				<label>Email</label>
-        				<input type="mail" class="form-control" id="exampleInputEmail1" placeholder="introducir el email"
+        				<input type="mail" class="form-control" id="exampleInputEmail1"
+        				placeholder="introducir el email"
         				data-ng-model="user.mail">
       				</div>
     		            <div>
@@ -132,8 +134,10 @@ El código que incluiremos es el siguiente:
     			            <label>Email: {{user.mail}}</label>
     			            </div>
     		            <div class="modal-footer">
-    		                <button type="button" class="btn btn-default" data-ng-click='clear(user)' >Limpiar</button>
-    		                <input type="submit" class="btn btn-primary" value="Crear"></button>
+    		                <button type="button" class="btn btn-default"
+    		                data-ng-click='clear(user)' >Limpiar</button>
+    		                <input type="submit" class="btn btn-primary" 
+    		                value="Crear"></button>
     		        	</div>
     		        </form>	
         </div>
@@ -204,7 +208,8 @@ Desde donde añadiremos el fichero css y el fichero javascript cada uno a los re
 Una vez localizados los añadiremos:
 
 
-     <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid-unstable.css" type="text/css">
+     <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid-unstable.css"
+     type="text/css">
      
      <script src="http://ui-grid.info/release/ui-grid-unstable.js"></script>
      
